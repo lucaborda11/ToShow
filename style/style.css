@@ -115,11 +115,12 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 17rem;
+    margin-top: 25%;
 }
 .home_1 footer div{
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    transform: rotate(180deg);
 }
 
 .home_1 footer .divider{
@@ -133,15 +134,14 @@ h6 {
 }
 
 .home_1 .container h1{
-
     font-weight: 500;
-    font-size: 90;
+    font-size: 130;
 }
 
 .home_1 .container{
     padding-left: 2rem;
     align-items: baseline;
-    margin-top: 5rem;
+    margin-top: 6%;
 }
 
 .home_1 .container h1 span{
@@ -159,7 +159,7 @@ h6 {
     border-color: darkviolet;
     margin-right: 2rem;
     margin-top: 2.5rem;
-    padding: 12 30;
+    padding: 15 50;
 }
 
 #btn_2 {
@@ -168,7 +168,7 @@ h6 {
     color: white;
     border-color: darkviolet;
     margin-top: 2.5rem;
-    padding: 12 50;
+    padding: 15 90;
 }
 
 .home_2 {
@@ -191,7 +191,7 @@ h6 {
 
 .home_2 .index{
     width: 2rem;
-    margin-top: 17rem;
+    margin-top: 25%;
     height: 250px;
     align-items: center;
     display: flex;
@@ -208,6 +208,7 @@ h6 {
 .home_2 footer div{
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    transform: rotate(180deg);
 }
 
 .home_2 footer .divider{
