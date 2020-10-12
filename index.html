@@ -2,44 +2,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/bootstrap.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/scss/bootstrap-grid.scss" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/scss/bootstrap-reboot.scss" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <title>Home</title>
 </head>
 <body>
-    <nav id="redes">
-        <ul>
-            <li><a class="ig" id="ig">instagram</a></li>
-            <li><a class="ld" id="ld">linkedin</a></li>
-            <li>
-                <select class="idioma" id="idioma">
-                    <option value="esp">Español</option>
-                    <option value="ing">English</option>
-                </select>
-            </li>
-        </ul>
+<div class="redes_container">
+    <div><img/></div>
+    <nav id="redes" class="redes">
+        <a class="ig" id="ig">instagram</a>
+        <a class="ld" id="ld">linkedin</a>
+        <a>Español</a>
     </nav>
+</div>
 
+<div class="main_container">
+    <h6 class="subtitle">W - World<span class="bold">Consulting.</span></h6>
     <nav class="main_nav" id="main_nav">
-        <h6><span class="bold">W - World</span>Consulting.</h6>
-        <ul>
-            <li><a class="home" id="home">Home</a></li>
-            <li><a class="mision" id="mision">Mision</a></li>
-            <li><a class="approach" id="approach">Approach</li>
-            <li><a class="team" id="team">Team</a></li>
-            <li><a class="case" id="case">Case</a></li>
-      </ul>
+        <a class="home" id="home">Home</a>
+        <a class="mision" id="mision">Mision</a>
+        <a class="approach" id="approach">Approach
+            <a class="team" id="team">Team</a>
+            <a class="cases" id="cases">Cases</a>
     </nav>
+</div>
 
 
     <section class="home_1" id="home_1">
         <footer class="index" id="index">
-            01
-            <span class="divider" id="divider"></span>
-            scroll
+            <div>
+                scroll
+            </div>
+            <div class="divider" id="divider"></div>
+            <div>
+                01 
+            </div>
         </footer>
-
-        <h1 class="title" id="title">The fastes way to achive success.</h1>
-        <input class="btn-home" type="button">
-        <input class="btn-home" type="button">
+        <div class="container">
+            <h1 class="title" id="title"> <span>The</span> <br> <span>fastes way </span><br> <span>to achive</span> <br> <span>success.</span></h1>
+            <input type="button" class="btn_1 btn btn-primary" id="btn_1" value="our Mission">
+            <input type="button" class="btn_2 btn btn-primary" id="btn_2" value="Watch the Presentation">
+        </div>
+        <div class="imagen"></div>
 
     </section>
 
@@ -49,6 +56,7 @@
             <span class="divider" id="divider"></span>
             Mision
         </footer>
+
         <h3>We bring the rigth people together to challenge established thinking and drive transformation</h3>
         <div class="readme">
             <h4>Mapping</h4>
