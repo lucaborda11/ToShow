@@ -115,7 +115,7 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 20rem;
+    margin-top: 17rem;
 }
 .home_1 footer div{
     writing-mode: vertical-rl;
@@ -141,7 +141,7 @@ h6 {
 .home_1 .container{
     padding-left: 2rem;
     align-items: baseline;
-    margin-top: 10rem;
+    margin-top: 5rem;
 }
 
 .home_1 .container h1 span{
