@@ -2,8 +2,8 @@
    background-color: black;
    color: white; 
    padding: 0%;
-   font-family: Arial, Helvetica, sans-serif;
    margin: 0%;
+   font-family: Arial, Helvetica, sans-serif;
 }
 
 section {
@@ -115,11 +115,12 @@ h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 20rem;
+    margin-top: 25%;
 }
 .home_1 footer div{
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    transform: rotate(180deg);
 }
 
 .home_1 footer .divider{
@@ -133,15 +134,14 @@ h6 {
 }
 
 .home_1 .container h1{
-
     font-weight: 500;
-    font-size: 90;
+    font-size: 130;
 }
 
 .home_1 .container{
     padding-left: 2rem;
     align-items: baseline;
-    margin-top: 10rem;
+    margin-top: 6%;
 }
 
 .home_1 .container h1 span{
@@ -159,7 +159,7 @@ h6 {
     border-color: darkviolet;
     margin-right: 2rem;
     margin-top: 2.5rem;
-    padding: 12 30;
+    padding: 15 50;
 }
 
 #btn_2 {
@@ -168,36 +168,47 @@ h6 {
     color: white;
     border-color: darkviolet;
     margin-top: 2.5rem;
-    padding: 12 50;
+    padding: 15 90;
 }
 
 .home_2 {
     background-color: ghostwhite;
-    align-items: center;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
 
 }
+
 .home_2 h3{
     background-color: ghostwhite;
     color: black;
-    font-size: 40px;
+    font-size: 45px;
+    margin-top: 3rem;
     margin-bottom: 2rem;
+    margin-left: 2rem;
 
 } 
-.home_2 footer{
+
+.home_2 .index{
     width: 2rem;
+    margin-top: 25%;
     height: 250px;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 20rem;
 }
+
+.home_2 .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
 .home_2 footer div{
     writing-mode: vertical-rl;
     text-orientation: mixed;
+    transform: rotate(180deg);
 }
 
 .home_2 footer .divider{
@@ -205,6 +216,7 @@ h6 {
     height: 120px;
     width: 1px;
 }
+
 .home_2 .container_btn {
     display: flex;
     flex-direction: row;
@@ -212,27 +224,94 @@ h6 {
     color: ghostwhite;
 
 }
+
 .home_2 div{
     background-color: ghostwhite;
 }
+
 .home_2 .readme{
     background-color:white;
     text-align: center;
+    width: 20rem;
+    margin-bottom: 5rem;
 }
+
+.home_2 div .img{
+    height: 13rem;
+    background-color: white;
+}
+
 .home_2 h4{
     background-color: white;
     color:black;
 }
+
 .home_2 p{
     background-color: white;
     color: black;
+    font-size: 14;
+    font-weight: 500;
+    margin: 0;
 }
+
 .home_2 .readme input {
     border-radius: 5rem;
     background-color: white;
     color: black;
     border-color: darkviolet;
-    margin-right: 2rem;
-    margin-top: 2.5rem;
-    padding: 12 40;
+    margin-top: 2rem;
+    padding: 8 55;
+    font-size: 15;
+    margin-bottom: 3rem;
+}
+.home_2 footer{
+    margin-left: 2rem;
+    background-color: ghostwhite;
+    color: black;
+}
+
+.home_2 footer div{
+    color: black;
+}
+
+.home_2 footer .divider{
+    background-color: black;
+}
+.home_3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.home_3 .brand{
+    background: white;
+    width: 40rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.home_3 .index {
+    width: 2rem;
+    margin-top: 25%;
+    height: 250px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.home_3 footer {
+    margin-left: 2rem;
+    background-color: black;
+    color: white;
+}
+.home_3 footer div{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+}
+.home_3 footer .divider{
+    background-color:white;
+    height: 120px;
+    width: 1px;
 }
