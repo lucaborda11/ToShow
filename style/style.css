@@ -172,7 +172,7 @@ h6 {
 }
 
 .home_2 {
-    background-color: ghostwhite;
+    background-color: #f6f6f6;
     display: flex;
     justify-content: space-around;
     flex-direction: row;
@@ -180,7 +180,7 @@ h6 {
 }
 
 .home_2 h3{
-    background-color: ghostwhite;
+    background-color: #f6f6f6;
     color: black;
     font-size: 45px;
     margin-top: 3rem;
@@ -221,12 +221,12 @@ h6 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    color: ghostwhite;
+    color: #f6f6f6;
 
 }
 
 .home_2 div{
-    background-color: ghostwhite;
+    background-color: #f6f6f6;
 }
 
 .home_2 .readme{
@@ -266,7 +266,7 @@ h6 {
 }
 .home_2 footer{
     margin-left: 2rem;
-    background-color: ghostwhite;
+    background-color: #f6f6f6;
     color: black;
 }
 
@@ -345,7 +345,7 @@ h6 {
 }
 
 .home_3 .brand .img{
-    background-color: ghostwhite;
+    background-color: #f6f6f6;
     height: 65%;
     width: 100%;
 }
@@ -376,53 +376,89 @@ h6 {
 }
 
 .footer{
-    background-color: ghostwhite;
-    height: 100px;
+    background-color: #f6f6f6;
     color: black;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding: 2rem 10%;
-    height: 200px;
+    height: 400px;
+    flex-wrap: wrap;
 }
 
 .footer .container_1{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 25%;
+
 }
 
 .footer .container_1 .logo{
     height: 100px;
-    text-align: center;
 }
 
-footer .container_1 .subtitle{
+.footer .container_1 .subtitle{
     color: black;
-    text-align: center;
-}
+    text-align: left;
+    margin-bottom: 2rem;
 
+
+}
+.footer .container_1 .text-footer{
+    font-size: 2.5rem;
+
+}
 .footer .container_2{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 65%;
+    width: 75%;
 }
-
+.footer .container_2 .formulario{
+    display:flex;
+    justify-content: space-around;
+    background-color: #f6f6f6;
+    padding: 2rem;
+    margin-top:2.5rem;
+}
+.footer .input_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+}
+.footer .input_container input{
+    background-color: #F6F6F6;
+    height: 3rem;
+    border-radius: 2rem;
+    width: 100%;
+    padding: 0.5rem 2rem;
+}
+.footer .input_container input:first-of-type{
+    margin-bottom: 1rem;
+}
+.footer .formulario textarea{
+    background-color: #f6f6f6;
+    border-radius: 2rem;
+    width:60%;
+    padding: 0.5rem 2rem;
+    height:100%;
+    resize: none;
+    
+}
 .footer div{
-    background-color: ghostwhite;
+    background-color: #f6f6f6;
     color: black;
 }
 .footer h6{
     font-weight: 700;
-    background-color: ghostwhite;
+    background-color: #f6f6f6;
 }
 .footer h3{
-    background-color: ghostwhite;
+    background-color: #f6f6f6;
 }
 .footer span{
-    background-color: ghostwhite;
+    background-color: #f6f6f6;
     color: black;
     font-weight: 900;
 }
@@ -436,6 +472,7 @@ footer .container_1 .subtitle{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
 }
 
 .footer .redes-footer div{
@@ -444,9 +481,15 @@ footer .container_1 .subtitle{
     flex-direction: row;
     justify-content: space-around;
 }
-
-.footer .redes-footer a{
+.footer .redes-footer .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+.footer .redes-footer .redes a{
+    color: #4538DA;
     font-weight: 700;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid #4538DA;
     cursor: pointer;
 }
