@@ -234,11 +234,17 @@ h6 {
     text-align: center;
     width: 20rem;
     margin-bottom: 5rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .home_2 div .img{
     height: 13rem;
     background-color: white;
+}
+.home_2 .container .container_btn .readme .img svg{
+    background-color: #FFFFFF;
+
 }
 
 .home_2 h4{
@@ -254,16 +260,6 @@ h6 {
     margin: 0;
 }
 
-.home_2 .readme input {
-    border-radius: 5rem;
-    background-color: white;
-    color: black;
-    border-color: darkviolet;
-    margin-top: 2rem;
-    padding: 8 55;
-    font-size: 15;
-    margin-bottom: 3rem;
-}
 .home_2 footer{
     margin-left: 2rem;
     background-color: #f6f6f6;
