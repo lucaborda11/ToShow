@@ -13,110 +13,6 @@ section {
     height: 100vh;
 }
 
-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-header .redes_container {
-    background-color: white;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 5rem;
-    padding-left: 5rem;
-}
-
-header .redes_container div{
-    background-color: white;
-    widows: 250px;
-}
-
-header .redes_container .redes {
-    background-color: white;
-    color: black;
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
-    width: 30rem;
-    padding-right: 6rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
-header .redes_container .redes a{
-    background-color: white;
-    color: black;
-}
-
-header .redes_container .redes select{
-    color: black;
-    background-color: white;
-    border: none;
-    appearance: none;
-    padding: 0 1em 0 0;
-    outline: none;
-}
-
-header .redes_container .redes select::-ms-expand {
-    display: none;
-}
-
-.main_container {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-right: 5rem;
-    padding-left: 5rem;
-}
-
-.main_nav {
-    width: 30rem;
-    background-color: black;
-    color: white;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
-    padding-right: 8rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.main_nav a{
-    background-color: black;
-    color: white;
-    padding-bottom: 5px;
-}
-
-.main_nav a:hover{
-    cursor: pointer;
-    border-bottom: white;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-
-}
-
-.subtitle{
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 20;
-}
-
-.bold {
-    background-color: black;
-    font-weight: 500;
-}
-
-h6 {
-    width: 250px;
-    font-weight: 900;
-}
-
 .home_1 {
     padding: 0 3rem;
     display: flex;
@@ -151,7 +47,7 @@ h6 {
 
 .home_1 .container h1{
     font-weight: 500;
-    font-size: 130;
+    font-size: 6rem;
 }
 
 .home_1 .container{
