@@ -20,7 +20,7 @@ nav {
     justify-content: space-around;
 }
 
-.redes_container {
+header .redes_container {
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -30,12 +30,12 @@ nav {
     padding-left: 5rem;
 }
 
-.redes_container div{
+header .redes_container div{
     background-color: white;
     widows: 250px;
 }
 
-.redes {
+header .redes_container .redes {
     background-color: white;
     color: black;
     padding-top: 0.7rem;
@@ -47,8 +47,22 @@ nav {
     justify-content: space-around;
 }
 
-.redes a{
+header .redes_container .redes a{
+    background-color: white;
     color: black;
+}
+
+header .redes_container .redes select{
+    color: black;
+    background-color: white;
+    border: none;
+    appearance: none;
+    padding: 0 1em 0 0;
+    outline: none;
+}
+
+header .redes_container .redes select::-ms-expand {
+    display: none;
 }
 
 .main_container {
