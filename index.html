@@ -6,30 +6,18 @@
     <title>Home</title>
 </head>
 <body>
-    <header>
-        <div class="redes_container">
-            <div><img/></div>
-            <nav id="redes" class="redes">
-                <a class="ig" id="ig">instagram</a>
-                <a class="ld" id="ld">linkedin</a>
-                <select name="" id="language" class="language">
-                    <option value="eng">English</option>
-                    <option value="esp">Español</option>
-                </select>
-            </nav>
-        </div>
+    <header id="nav"></header>
 
-        <div class="main_container">
-            <h6 class="subtitle">W - World<span class="bold">Consulting.</span></h6>
-            <nav class="main_nav" id="main_nav">
-                <a class="home" id="home">Home</a>
-                <a class="mision" id="mision">Mision</a>
-                <a class="approach" id="approach">Approach
-                    <a class="team" id="team">Team</a>
-                    <a class="cases" id="cases">Cases</a>
-            </nav>
-        </div>
-    </header>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates['nav'];
+
+        document.getElementById('nav').innerHTML += navTemplate()
+    </script>
 
     <section class="home_1" id="home_1">
         <footer class="index" id="index">
@@ -162,28 +150,14 @@
         </span>
         
     </section>
-    <div class="footer">
-        <div class="container_1">
-            <div class="subtitle"><span>W - World</span>Consulting.</div>
-            <h3 class="text-footer">Wanna build something great together?<br>Let's talk</h3>
-        </div>
-        <div class="container_2">
-            <form action="" class="formulario">
-                <div class="input_container">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
-                    <input type="email" name="email" id="email" placeholder="Correo Electronico">
-                </div>
-                <textarea name="" id="" cols="30" placeholder="Mensaje"></textarea>
-            </form>
-        </div>
-        <div class="redes-footer">
-            <img src="img/footer_persona.png" alt="" class="logo" />
-            <div class="redes">
-                <a>walter@wwclatam.com</a>
-                <a>Instagram</a>
-                <a>Linkedin</a>
-            </div>
-        </div>
-    </div>
+
+    <footer id='form'></footer>
+
+    <script type="text/javascript">
+        var footerTemplate = Handlebars.templates['footer'];
+
+        document.getElementById('form').innerHTML += footerTemplate()
+    </script>
+
 </body>
 </html>
