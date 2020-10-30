@@ -3,10 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/approach.css">
+    <link rel="stylesheet" href="style/nav.css">
     <title>Approach</title>
 </head>
 <body>
 
+    <header id="nav"></header>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates['nav'];
+
+        document.getElementById('nav').innerHTML += navTemplate()
+    </script>
 
     <section class="approach_1">
         <h2 class="title">
