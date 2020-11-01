@@ -69,17 +69,21 @@ header .redes_container .redes select::-ms-expand {
     width: 30rem;
     background-color: black;
     color: white;
-    padding-bottom: 2rem;
-    padding-top: 2rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     padding-right: 8rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
+
 .main_nav a{
     background-color: black;
     color: white;
     padding-bottom: 5px;
+    border-bottom: black;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 }
 
 .main_nav a:hover{
@@ -87,7 +91,6 @@ header .redes_container .redes select::-ms-expand {
     border-bottom: white;
     border-bottom-width: 1px;
     border-bottom-style: solid;
-
 }
 
 .subtitle{

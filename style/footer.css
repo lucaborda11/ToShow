@@ -1,0 +1,119 @@
+.footer{
+    background-color: #f6f6f6;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2rem 10%;
+    flex-wrap: wrap;
+}
+
+.footer .container_1{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+
+}
+
+.footer .container_1 .logo{
+    height: 100px;
+}
+
+.footer .container_1 .subtitle{
+    color: black;
+    text-align: left;
+    margin-bottom: 2rem;
+
+
+}
+.footer .container_1 .text-footer{
+    font-size: 2.5rem;
+
+}
+.footer .container_2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75%;
+}
+.footer .container_2 .formulario{
+    display:flex;
+    justify-content: space-around;
+    background-color: #f6f6f6;
+    padding: 2rem;
+    margin-top:2.5rem;
+}
+.footer .input_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 35%;
+}
+.footer .input_container input{
+    background-color: #F6F6F6;
+    height: 3rem;
+    border-radius: 2rem;
+    border: 1px solid grey;
+    width: 100%;
+    padding: 0.5rem 2rem;
+}
+.footer .input_container input:first-of-type{
+    margin-bottom: 1rem;
+}
+.footer .formulario textarea{
+    background-color: #f6f6f6;
+    border-radius: 2rem;
+    width:60%;
+    padding: 0.5rem 2rem;
+    height:100%;
+    resize: none;
+    
+}
+.footer div{
+    background-color: #f6f6f6;
+    color: black;
+}
+.footer h6{
+    font-weight: 700;
+    background-color: #f6f6f6;
+}
+.footer h3{
+    background-color: #f6f6f6;
+}
+.footer span{
+    background-color: #f6f6f6;
+    color: black;
+    font-weight: 900;
+}
+.footer .titulo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-weight: 900;
+}
+.footer .redes-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.footer .redes-footer div{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer .redes-footer .redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 60%;
+}
+.footer .redes-footer .redes a{
+    color: #4538DA;
+    font-weight: 700;
+    border-bottom: 2px solid #4538DA;
+    cursor: pointer;
+}

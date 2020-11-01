@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/approach.css">
     <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
     <title>Approach</title>
 </head>
 <body>
@@ -122,22 +123,14 @@
             </div>
             <span class="divider-approach">-----</span>
         </div>
-
-        <footer>
-            <div class="form-container">
-                <h3 class="text-footer">Wanna build something greate together?</h3>
-                <form>
-                    <input id="form-name" class="form-name" placeholder="Nombre y Apellido" type="text" />
-                    <input id="form-mail" class="form-mail" placeholder="Mail" type="text" />
-                    <input id="form-text" class="form-text" placeholder="Por que se contacta" type="text" />
-                    <input id="submit" value="SEND" type="button" />
-                </form>
-            </div>
-            <div class="redes-footer"><h6><span class="bold">W - World</span>Consulting.</h6><h6>walter@wwclatam.com</h6><h6><a>Instagram</a></h6>
-            <h6><a>Linkedin</a></h6>
-            </div>
-        </footer>
     </section>
-    <footer class="footer"></footer>
-</body>
+
+    <footer id='form'></footer>
+
+    <script type="text/javascript">
+        var footerTemplate = Handlebars.templates['footer'];
+
+        document.getElementById('form').innerHTML += footerTemplate()
+    </script>
+    </body>
 </html>
