@@ -26,6 +26,7 @@ section {
 }
 
 .home_1 footer{
+    z-index: -1;
     width: 2rem;
     height: 250px;
     align-items: center;
@@ -191,6 +192,7 @@ section {
 }
 
 .home_2 footer{
+    z-index: -1;
     margin-left: 2rem;
     background-color: #f6f6f6;
     color: black;
