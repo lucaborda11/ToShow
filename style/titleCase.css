@@ -1,0 +1,36 @@
+
+.titleContainer {
+    background-color: black;
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif;
+    max-height: 100vh;
+    height: 30rem;
+    padding: 0 10%;
+    padding-top: 5%;
+    align-items: center;
+}
+
+.titleContainer .title{
+    padding-top: 12rem;
+    font-size: 4rem;
+    font-weight: 500;
+}
+
+.titleContainer .title p{
+    border-bottom: 1px solid white;
+}
+
+.titleContainer .title div{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.titleContainer .title .flecha{
+    fill: white;
+    padding: 0 1rem;
+    padding-top: 1rem;
+}
+
+.titleContainer .title .flecha svg{
+    width: 3rem;
+}
