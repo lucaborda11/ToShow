@@ -1,105 +1,109 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/nav.css">
-    <link rel="stylesheet" href="style/footer.css">
-    <link rel="stylesheet" href="style/titleCase.css">
     <title>Home</title>
-</head>
-<body>
+  </head>
+  <body>
     <header id="nav"></header>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+    ></script>
 
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
 
     <script type="text/javascript">
-        var navTemplate = Handlebars.templates['nav'];
+      var navTemplate = Handlebars.templates["nav"];
 
-        document.getElementById('nav').innerHTML += navTemplate()
+      document.getElementById("nav").innerHTML += navTemplate();
     </script>
 
     <section class="home_0"></section>
 
     <section class="home_1" id="home_1">
-        <footer class="index" id="index">
-            <div>
-                scroll
-            </div>
-            <div class="divider" id="divider"></div>
-            <div>
-                01 
-            </div>
-        </footer>
-        <div class="container">
-            <h1 class="title" id="title"> <span>The</span> <br> <span>fastes way </span><br> <span>to achive</span> <br> <span>success.</span></h1>
+      <footer class="index" id="index">
+        <div>
+          scroll
         </div>
-        <div class="imagen">
-            <img src="img/background.png" alt="" />
+        <div class="divider" id="divider"></div>
+        <div>
+          01
         </div>
-
+      </footer>
+      <div class="container">
+        <h1 class="title" id="title">
+          <span>La forma</span> <br />
+          <span>más rápida </span><br />
+          <span>de alcanzar</span> <br />
+          <span>el éxito.</span>
+        </h1>
+      </div>
+      <div class="imagen">
+        <img src="img/background.png" alt="" />
+      </div>
     </section>
-
     <section class="home_2" id="home_2">
-        <footer class="index" id="index">
-            <div>
-                About
-            </div>
-            <div class="divider" id="divider"></div>
-            <div>
-                02
-            </div>
-        </footer>
-
-        <div class="container">
-            <h3>We bring the rigth people together to challenge <br> established thinking and drive transformation</h3>
-            <div class="container_btn">
-                <div class="readme">
-                    <div class="img">
-                            <svg width="95" height="102" viewBox="0 0 95 102" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0)">
-                                <path d="M91.21 37.55C89.16 32.58 86.52 27.87 82.81 23.88C81.85 22.85 81.45 21.72 81.6 20.31C81.92 17.28 81.33 14.38 80.09 11.64C77.28 5.36999 72.37 1.50998 65.69 0.329985C58.74 -0.900015 52.73 1.32998 47.78 6.40998C47.23 6.97998 46.27 7.44998 45.49 7.45998C36.93 7.59998 29.17 10.28 22.03 14.81C15.54 18.92 10.37 24.32 6.48 31.02C3.1 36.85 0.740003 42.99 0.190003 49.69C-0.759997 61.16 1.9 71.75 8.59 81.22C17.97 94.5 30.94 101 46.74 101.59C54.72 101.37 61.99 99.84 68.84 96.12C76.5 91.95 82.72 86.37 87.29 78.97C91.8 71.68 94.33 63.8 94.41 55.14C94.47 49.04 93.52 43.14 91.21 37.55ZM48.11 17.56C49.15 8.95998 57.48 3.71999 65.05 5.31998C71.01 6.57998 74.51 10.49 76.26 16.13C76.53 17.01 76.49 17.99 76.59 18.92C76.72 22.06 75.6 24.85 74.3 27.61C71.77 32.97 67.69 37.05 63.36 40.94C62.56 41.66 61.95 41.52 61.19 40.85C57.74 37.79 54.42 34.58 52.02 30.64C49.6 26.66 47.51 22.5 48.11 17.56ZM88.74 61.99C87.89 66.71 86.09 71.06 83.68 75.21C79.23 82.85 72.96 88.45 65.12 92.39C59.49 95.22 53.52 96.4 47.26 96.41C36.64 96.36 27.38 92.7 19.37 85.79C18.96 85.44 18.64 84.74 18.63 84.2C18.58 82.05 18.08 81.07 16.08 80.74C14.27 80.45 13.32 79.4 12.35 78.02C9.05 73.27 6.83 68.02 5.84 62.39C4.78 56.41 4.7 50.38 6.29 44.38C8.86 34.73 14.12 26.9 22.02 20.93C27.45 16.83 33.53 14 40.42 13.21C43.78 12.82 43.84 12.79 43.31 16.03C42.54 20.71 43.64 24.96 45.62 29.2C49 36.44 54.57 41.7 60.54 46.65C61.73 47.64 63 47.6 64.26 46.63C70.43 41.93 75.97 36.68 79.09 29.37C79.58 28.23 80.16 28.36 80.77 29.2C83.94 33.59 86.42 38.3 87.86 43.56C89.53 49.65 89.86 55.78 88.74 61.99Z" fill="#4538DA"/>
-                                <path d="M44.98 73.2199C42.7 74.3499 40.49 75.6299 38.27 76.8899C37.84 77.1399 37.28 77.5799 37.22 77.9999C37.08 78.9099 36.94 80.0099 37.33 80.7599C37.8 81.6799 38.88 82.2299 40.02 81.6299C42.28 80.4499 44.55 79.2799 46.71 77.9299C47.47 77.4599 47.9 76.4799 48.23 76.0599C48.29 73.7099 46.59 72.4299 44.98 73.2199Z" fill="#4538DA"/>
-                                <path d="M31.36 79.3701C28.9 79.7901 26.45 80.2801 24.03 80.8901C22.44 81.2901 21.66 82.4801 21.89 83.7001C22.11 84.8901 23.35 85.7201 24.93 85.9801C27.59 85.3001 30.28 84.7201 32.89 83.9001C34.01 83.5501 34.57 82.4301 34.1 81.2101C33.64 80.0201 32.75 79.1301 31.36 79.3701Z" fill="#4538DA"/>
-                                <path d="M58.26 62.6099C57.64 62.3199 56.38 62.4999 55.89 62.9799C53.89 64.9299 52.02 67.0299 50.21 69.1699C49.36 70.1799 49.6 71.3699 50.49 72.2899C51.33 73.1599 52.98 73.0799 54.04 72.0099C55.73 70.3199 57.34 68.5399 58.91 66.7299C59.32 66.2499 59.46 65.5299 59.83 64.6599C59.33 63.9599 58.96 62.9399 58.26 62.6099Z" fill="#4538DA"/>
-                                <path d="M62.75 52.1499C62.09 52.0099 60.91 52.5199 60.58 53.0999C59.76 54.5199 59.03 56.1099 58.8 57.6999C58.69 58.4799 59.6 59.7799 60.39 60.1899C60.99 60.5099 62.56 60.0699 62.93 59.4899C63.86 58.0299 64.36 56.2899 64.87 55.0699C64.75 53.2399 63.87 52.3799 62.75 52.1499Z" fill="#4538DA"/>
-                                <path d="M62.4 27.3699C66.07 27.3299 69.28 24.0199 69.18 20.3699C69.08 16.5999 66.07 13.5999 62.37 13.5899C58.66 13.5699 55.47 16.7799 55.49 20.4899C55.51 24.1699 58.76 27.4099 62.4 27.3699ZM60.58 20.5299C60.79 19.8299 61.67 18.9699 62.37 18.8499C63.36 18.6899 64.21 19.5999 63.99 20.6299C63.84 21.2999 62.99 21.8199 62.12 22.7899C61.38 21.7599 60.45 20.9899 60.58 20.5299Z" fill="#4538DA"/>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0">
-                                <rect width="94.41" height="101.59" fill="white"/>
-                                </clipPath>
-                                </defs>
-                                </svg>
-                                
-                    </div>
-                    <h4>Mapping</h4>
-                    <p>Realizamos un mapa de la situacion, <br> identificando los problemas.</p>
-                </div>
-                <div class="readme">
-                    <div class="img"></div>
-                    <h4>Estrategy</h4>                    
-                    <p>Desarrollamos la estrategia para sortear <br> las barreras y alcanzamos el objetivo.</p>
-                </div>
-                <div class="readme">
-                    <div class="img"></div>
-                    <h4>Execution</h4>
-                    <p>Diseñamos el plan junto a un equipo <br> altamente capacitado y lo ejecutamos</p>
-                </div>
-            </div>
+      <footer class="index" id="index">
+        <div>
+          Workflow
         </div>
+        <div class="divider" id="divider"></div>
+        <div>
+          02
+        </div>
+      </footer>
+
+      <div class="container">
+        <h1>
+          En un entorno de cambio exponencial,<br />
+          la adaptación es la llave .
+        </h1>
+        <h2>
+          El éxito es subjetivo, en cambio los resultados son concretos. <br />
+          los objetivos claros fijan “el norte” y guían a la organización <br />
+          a lograrlo .
+        </h2>
+        <div class="container_btn">
+          <div class="readme">
+            <div class="img">
+              <img src="img/mappingImg.png" alt="" />
+              <h4>Mapping</h4>
+              <p>
+                Realizamos un mapa de la situacion, <br />
+                identificando los problemas.
+              </p>
+            </div>
+          </div>
+          <div class="readme">
+            <div class="img">
+              <img src="img/estrategiaImg.png" alt="" />
+              <h4>Estrategy</h4>
+              <p>
+                Desarrollamos la estrategia para sortear <br />
+                las barreras y alcanzamos el objetivo.
+              </p>
+            </div>
+          </div>
+          <div class="readme">
+            <div class="img">
+              <img src="img/ejecucionImg.png" alt="" />
+              <h4>Execution</h4>
+              <p>
+                Diseñamos el plan junto a un equipo <br />
+                altamente capacitado y lo ejecutamos
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer id='form'></footer>
+    <footer id="form"></footer>
 
     <script type="text/javascript">
-        var footerTemplate = Handlebars.templates['footer'];
+      var footerTemplate = Handlebars.templates["footer"];
 
-        document.getElementById('form').innerHTML += footerTemplate()
+      document.getElementById("form").innerHTML += footerTemplate();
     </script>
-
-</body>
+  </body>
 </html>
