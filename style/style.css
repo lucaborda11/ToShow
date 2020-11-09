@@ -34,10 +34,7 @@ section {
 }
 
 .home_1 {
-  padding: 0 3rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+
 }
 
 .home_1 footer {
@@ -196,10 +193,7 @@ section {
   margin: 0;
 }
 
-.home_2 footer {
-  margin-left: 2rem;
-  background-color: #f6f6f6;
-  color: black;
+
 }
 
 .home_2 footer div {
