@@ -90,10 +90,15 @@
     margin-bottom: 1rem;
 }
 
-.infoNext .logoContainer .logo img{
+.infoNext .logoContainer .logo .alto{
     padding-top: 2.5rem;
-    max-width: 116px;
-    max-width: 145px;
+    max-width: 9rem;
+}
+
+.infoNext .logoContainer .logo .ancho{
+    padding-top: 5rem;
+    width: 19rem;
+    max-width: 19rem;
 }
 
 .infoNext .logoContainer .nextCase {
@@ -113,4 +118,8 @@
 .infoNext .logoContainer .nextCase svg {
     fill: #4538DA;
     width: 2rem;
+}
+
+.infoNext .logoContainer .nextCase svg:hover{
+    cursor: pointer;
 }
