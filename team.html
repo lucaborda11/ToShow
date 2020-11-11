@@ -4,32 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/person.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
     <title>Team</title>
   </head>
   <body>
-    <nav id="redes">
-      <ul>
-        <li><a class="ig" id="ig">instagram</a></li>
-        <li><a class="ld" id="ld">linkedin</a></li>
-        <li>
-          <select class="idioma" id="idioma">
-            <option value="esp">Español</option>
-            <option value="ing">English</option>
-          </select>
-        </li>
-      </ul>
-    </nav>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
 
-    <nav class="main_nav" id="main_nav">
-      <h6><span class="bold">W - World</span>Consulting.</h6>
-      <ul>
-        <li><a class="home" id="home">Home</a></li>
-        <li><a class="mision" id="mision">Mision</a></li>
-        <li><a class="approach" id="approach">Approach</a></li>
-        <li><a class="team" id="team">Team</a></li>
-        <li><a class="case" id="case">Case</a></li>
-      </ul>
-    </nav>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/person.js"></script>
+
+    <header id="nav"></header>
+
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates['nav'];
+
+        document.getElementById('nav').innerHTML += navTemplate()
+    </script>
+
+    <div id="person"></div>
+
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates['person'];
+        var img = '<img class="img" src="img/person1.png" alt="">'
+        var position = 'CD'
+        var personName = 'Santiago Mondjian'
+        var text = 'Mediante la guía del pensamiento creativo, busco el masterblend entre publicidad, arte e innovación. '
+        var redes = '<a>LinkedIn</a><a>Instagram</a>'
+
+        var data = {
+          img: img,
+          position: position,
+          personName: personName,
+          description: text,
+          redes: redes
+        }
+
+        document.getElementById('person').innerHTML += navTemplate(data)
+    </script>
+
     <section class="team_1" id="team_1">
       <h2 class="title">Our Team</h2>
       <span class="flecha"></span>
@@ -83,37 +98,13 @@
         <a href="#" class="ld">Linkedin</a>
       </div>
     </section>
-    <footer>
-      <div class="form-container">
-        <h3 class="text-footer">Wanna build something greate together?</h3>
-        <form>
-          <input
-            id="form-name"
-            class="form-name"
-            placeholder="Nombre y Apellido"
-            type="text"
-          />
-          <input
-            id="form-mail"
-            class="form-mail"
-            placeholder="Mail"
-            type="text"
-          />
-          <input
-            id="form-text"
-            class="form-text"
-            placeholder="Por que se contacta"
-            type="text"
-          />
-          <input id="submit" value="SEND" type="button" />
-        </form>
-      </div>
-      <div class="redes-footer">
-        <h6><span class="bold">W - World</span>Consulting.</h6>
-        <h6>walter@wwclatam.com</h6>
-        <h6><a>Instagram</a></h6>
-        <h6><a>Linkedin</a></h6>
-      </div>
-    </footer>
+
+    <footer id="form"></footer>
+
+    <script type="text/javascript">
+      var footerTemplate = Handlebars.templates["footer"];
+
+      document.getElementById("form").innerHTML += footerTemplate();
+    </script>
   </body>
 </html>
