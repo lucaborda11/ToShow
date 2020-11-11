@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/enfoque.css" />
+    <link rel="stylesheet" href="style/fonts.css" />
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+    ></script>
+    <title>Enfoque</title>
+  </head>
+  <body>
+    <header id="nav"></header>
+    <section class="home_0"></section>
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+    ></script>
+
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/paso.js"></script>
+
+    <script type="text/javascript">
+      var navTemplate = Handlebars.templates["nav"];
+
+      document.getElementById("nav").innerHTML += navTemplate();
+    </script>
+    <div id="paso"></div>
+    <script type="text/javascript">
+      var navTemplate = Handlebars.templates["paso"];
+      var number = "01";
+      var title = "Encuentra el problema";
+      var description =
+        "¿Qué problema se resuelve primero? No importa. <br />Con tiempo y energía, se arregla el que más repercusión tenga <br />en el balance final.";
+      var pasos =
+        "<div>Marketing Research</div><div>Escucha a tu equipo</div><div>Analizar el problema</div>";
+
+      var data = {
+        number: number,
+        titulo: title,
+        description: description,
+        pasos: pasos
+      };
+      document.getElementById("paso").innerHTML += navTemplate(data);
+    </script>
+
+    <footer id="form"></footer>
+
+    <script type="text/javascript">
+      var footerTemplate = Handlebars.templates["footer"];
+
+      document.getElementById("form").innerHTML += footerTemplate();
+    </script>
+  </body>
+</html>
