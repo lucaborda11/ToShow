@@ -27,6 +27,7 @@ header .redes_container {
 }
 
 header .redes_container img {
+    background-color: white;
     margin-left: 1.6rem;
 }
 

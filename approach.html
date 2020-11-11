@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/approach.css">
+    <link rel="stylesheet" href="style/title.css">
     <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/footer.css">
     <title>Approach</title>
@@ -14,6 +14,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
 
     <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/title.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
 
     <script type="text/javascript">
@@ -22,24 +23,25 @@
         document.getElementById('nav').innerHTML += navTemplate()
     </script>
 
-    <section class="approach_1">
-        <h2 class="title">
-            <div>
-                <p>Our</p>
-            </div>
-            <div>
-                <p>Approach</p> 
-                <span class="flecha">
-                    <svg width="90" height="55" viewBox="0 0 90 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M62.5821 0L59.8324 2.75551L82.3638 25.335H0V29.2399H82.7252L59.7853 52.2445L62.5349 55L90 27.4764L62.5821 0Z" fill="white"/>
-                    </svg>                        
-                </span>
-            </div>
-        </h2>
-        <article>Vamos profundo para desbloquear la información y tener el coraje de actuar, tabajando con nuestros clientes en crear las capacidades que les permitan a la organización lograr los resultados claves.<br>
-            Nuestro equipo tiene un enfoque innovador porque busca el éxito a través del conocimiento pero aplicado en una forma diferente a la usada previamente.</article>
+    <div class="home_0"></div>
 
-    </section>
+    <section class="approach_1" id="approach_1"></section>
+
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates['title'];
+        var text = "Vamos profundo para desbloquear la información y tener el coraje de actuar, tabajando con nuestros clientes en crear las capacidades que les permitan a la organización lograr los resultados claves.<br>"
+        text += "Nuestro equipo tiene un enfoque innovador porque busca el éxito a través del conocimiento pero aplicado en una forma diferente a la usada previamente."
+        var firstLine = "Our"
+        var secondLine = "Approach"
+
+        var data = {
+            text: text,
+            firstLine: firstLine,
+            secondLine: secondLine
+        }
+
+        document.getElementById('approach_1').innerHTML += navTemplate(data)
+    </script>
 
     <section class="approach_2">
         <div class="container">
