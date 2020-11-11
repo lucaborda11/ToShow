@@ -2,84 +2,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/mission.css">
+    <link rel="stylesheet" href="style/fonts.css">
     <title>Mission</title>
 </head>
 <body>
-    <nav id="redes">
-        <ul>
-            <li><a class="ig" id="ig">instagram</a></li>
-            <li><a class="ld" id="ld">linkedin</a></li>
-            <li>
-                <select class="idioma" id="idioma">
-                    <option value="esp">Español</option>
-                    <option value="ing">English</option>
-                </select>
-            </li>
-        </ul>
-    </nav>
+    <header id="nav"></header>
 
-    <nav class="main_nav" id="main_nav">
-        <h6><span class="bold">W - World</span>Consulting.</h6>
-        <ul>
-            <li><a class="home" id="home">Home</a></li>
-            <li><a class="mision" id="mision">Mision</a></li>
-            <li><a class="approach" id="approach">Approach</li>
-            <li><a class="team" id="team">Team</a></li>
-            <li><a class="case" id="case">Case</a></li>
-      </ul>
-    </nav>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+    ></script>
 
-    <section class="mission_1">
-        <h2 class="title">Our approach</h2><span class="flecha"></span>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique culpa itaque possimus, quos accusantium iusto voluptate temporibus provident, et perspiciatis dicta commodi ab ipsa, ea beatae velit. Harum eos obcaecati minus recusandae? Nam nulla fugit quibusdam illo vitae quo, suscipit sapiente modi neque tempore sequi veritatis numquam aperiam explicabo ipsa exercitationem omnis itaque quas eaque asperiores esse id. Quis magni, quo omnis, laborum repellat placeat maiores molestias assumenda voluptates incidunt dolor in, praesentium voluptatem? Perferendis praesentium veritatis vitae aliquam iste amet sit ullam mollitia consequatur quod aspernatur repudiandae sunt perspiciatis, officia, harum voluptatem cum, ratione distinctio assumenda excepturi suscipit voluptas!</p>
-    </section>
+    <script type="text/javascript" src="js/title.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+    <script type="text/javascript">
+      var navTemplate = Handlebars.templates["nav"];
+
+      document.getElementById("nav").innerHTML += navTemplate();
+    </script>
+
+    <section class="home_0"></section>
+
+    <section class="mission_1"></section>
+
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates['title'];
+        var text = "Facilitar la Transformación profunda en las organizaciones,<br> desarrollando capacidades para  alcanzar resultados sustentables de crecimiento,<br> funcionando como sus catalizadores del cambio adaptativo y creando un nuevo futuro."
+        var firstLine = "Nuestra"
+        var secondLine = "Misión"
+
+        var data = {
+            text: text,
+            firstLine: firstLine,
+            secondLine: secondLine
+        }
+
+        document.getElementById('mission_1').innerHTML += navTemplate(data)
+    </script>
+
     <section class="mission_2">
-        <div class="img-text"></div>
+        <div class="container">
+            <div class="black">
+                <img src="img/blackMission.png" alt="">
+                <div class="text">
+                    <svg width="69" height="42" viewBox="0 0 69 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.9796 -1.83766e-06L45.8715 2.10421L63.1456 19.3467L-1.69134e-06 19.3467L-1.95203e-06 22.3287L63.4227 22.3287L45.8354 39.8958L47.9434 42L69 20.982L47.9796 -1.83766e-06Z" fill="#4538DA"/>
+                    </svg>
+                    <article class="description">
+                        <p>Creamos un equipo basado en</p>
+                        <p>diversidad, talento y experiencia.</p>
+                        <p>Los pilares fundamentales</p>
+                        <p>para conducir la transformación</p>
+                        <p>a través de la ejecución.</p>
+                    </article>
+                        
+                </div>
+            </div>
+            <div class="white">
+                <img src="img/whiteMission.png" alt="">
+                <div class="text">
+                    <svg width="69" height="42" viewBox="0 0 69 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.9796 -1.83766e-06L45.8715 2.10421L63.1456 19.3467L-1.69134e-06 19.3467L-1.95203e-06 22.3287L63.4227 22.3287L45.8354 39.8958L47.9434 42L69 20.982L47.9796 -1.83766e-06Z" fill="#4538DA"/>
+                    </svg>
+                    <article class="description">
+                        <p>Nuestro equipo cuenta</p>
+                        <p>con las personas adecuadas</p>
+                        <p>para desafiar el pensamiento</p>
+                        <p>establecido y liderar</p>
+                        <p>la transformación.</p>
+                    </article>
+                </div>
+            </div> 
+        </div>
     </section>
-    <section class="mission_3">
-        <h3>We bring the rigth people together to challenge established thinking and drive transformation</h3>
-        <div class="readme">
-            <h4>Mapping</h4>
-            <h6>Realizamos un mapa de la situacion, identificando los problemas.</h6>
-            <input type="button">
-        </div>
-        <div class="readme">
-            <h4>Estrategy</h4>
-            <h6>Desarrollamos la estrategia para sortear las barreras y alcanzamos el objetivo.</h6>
-            <input type="button">
-        </div>
-        <div class="readme">
-            <h4>Execution</h4>
-            <h6>Diseñamos el plan junto a un equipo altamente capacitado y lo ejecutamos</h6>
-            <input type="button">
-        </div>
-    </section>
-    <section class="mission_4">
-        <div class="profile">
-            <img src="#" />
-            <h6 class="subtitle">PRESIDENT</h6>
-            <h3 class="name">Walter Gonzalez</h3>
-            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur velit consectetur similique impedit ullam blanditiis! Quo nobis praesentium temporibus possimus.</p>
-            <a href="#" class="ld">Linkedin</a>
-        </div>
-        <div class="paragraph">
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, voluptatem officia? Distinctio accusantium doloremque repudiandae rem odio fuga dolorem temporibus quibusdam. Omnis at voluptatibus, veritatis blanditiis optio aliquid minima assumenda eius recusandae dolore perspiciatis modi sint consequuntur expedita. Molestiae, architecto!</p>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta necessitatibus consequuntur adipisci inventore voluptatibus deleniti nostrum harum! Quidem tenetur asperiores, dolore porro minima accusantium magni sed quibusdam sequi odio eaque maxime error qui, exercitationem sunt suscipit doloremque nesciunt delectus iusto.</p>
-        </div>
-    </section>
-    <footer>
-        <div class="form-container">
-            <h3 class="text-footer">Wanna build something greate together?</h3>
-            <form>
-                <input id="form-name" class="form-name" placeholder="Nombre y Apellido" type="text" />
-                <input id="form-mail" class="form-mail" placeholder="Mail" type="text" />
-                <input id="form-text" class="form-text" placeholder="Por que se contacta" type="text" />
-                <input id="submit" value="SEND" type="button" />
-            </form>
-        </div>
-        <div class="redes-footer"><h6><span class="bold">W - World</span>Consulting.</h6><h6>walter@wwclatam.com</h6><h6><a>Instagram</a></h6>
-        <h6><a>Linkedin</a></h6>
-        </div>
-</footer>
+    <footer id="form"></footer>
+
+    <script type="text/javascript">
+      var footerTemplate = Handlebars.templates["footer"];
+
+      document.getElementById("form").innerHTML += footerTemplate();
+    </script>
 </body>
 </html>
