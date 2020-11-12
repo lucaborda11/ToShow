@@ -4,64 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/mission.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/cases.css">
+
     <title>Cases</title>
 </head>
 <body>
-    <nav id="redes">
-        <a class="ig" id="ig">instagram</a>
-        <a class="ld" id="ld">linkedin</a>
-        <select class="idioma" id="idioma">
-            <option value="esp">Español</option>
-            <option value="ing">English</option>
-        </select>
-    </nav>
+    <header id="nav"></header>
 
-    <nav class="main_nav" id="main_nav">
-        <h6><span class="bold">W - World</span>Consulting.</h6>
-        <a class="home" id="home">Home</a>
-        <a class="mision" id="mision">Mision</a>
-        <a class="approach" id="approach">Approach
-        <a class="team" id="team">Team</a>
-        <a class="cases" id="cases">Cases</a>
-      </ul>
-    </nav>
-    <section class="cases" id="cases">
-        <img src="#" alt="">
-        <h1>Ivascular--></h1>
-    </section>
-    <section class="cases-article" id="cases-article">
-        <div class="article-uno">
-            <div class="article-img" id="article-img"></div>
-            <div class="article-text" id="article-text">
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+    ></script>
+
+    <script type="text/javascript" src="js/nav.js"></script>
+    <script type="text/javascript" src="js/titleCase.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+
+    <script type="text/javascript">
+      var navTemplate = Handlebars.templates["nav"];
+
+      document.getElementById("nav").innerHTML += navTemplate();
+    </script>
+
+    <section class="home_0"></section>
+
+    <section class="container" >
+        <div class="case">
+            <div class="caseImg">
+                <img src="img/ivascularLogo.png" class="ivascular" alt="">
+                <div class="subtext">
+                    <h4>
+                        iVascular
+                    </h4>
+                    <svg width="68" height="42" viewBox="0 0 68 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.2842 0L45.2067 2.10421L62.2304 19.3467H0V22.3287H62.5035L45.1711 39.8958L47.2486 42L68 20.982L47.2842 0Z" fill="black"/>
+                    </svg>    
+                </div>
+            </div>
+            <div class="caseText">
                 <h3>Ivascular</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam assumenda amet vero impedit quia, repellendus, architecto unde eius a aspernatur ratione atque incidunt vitae maiores nobis, rem asperiores deserunt earum.</p>
+                <article>Empresa líder en dispositivos médicos e innovación de origen europeo, con foco en la creación de soluciones terapéuticas de enfermedades Cardiovasculares y Neurovasculares.</article>
+                <div class="more" >
+                    <a href="ivascular.html">Read more</a>
+                    <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.9468 0L21.9385 1.002L30.2001 9.21271H0V10.6327H30.3326L21.9213 18.998L22.9295 20L33 9.99141L22.9468 0Z" fill="#4538DA"/>
+                    </svg>                    
+                </div>
             </div>
-            <span><a href="#">Read more--></a></span>
         </div>
-        <div class="article-dos">
-            <div class="article-text" id="article-text">
+        <div class="case">
+            <div class="caseText" >
+                <h3>Century 21</h3>
+                <article>WWC contribuye con C21 al desarrollo de proyectos y soluciones inmobiliarias innovadoras, integrales y ajustadas a las necesidades de sus clientes.</article>
+                <div class="more">
+                    <a href="century.html">Read more</a>
+                    <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.9468 0L21.9385 1.002L30.2001 9.21271H0V10.6327H30.3326L21.9213 18.998L22.9295 20L33 9.99141L22.9468 0Z" fill="#4538DA"/>
+                    </svg>  
+                </div>
+            </div>
+            <div class="caseImg" >
+                <img src="img/logoCentury.png" class="century" alt="">
+                <div class="subtext">
+                    <h4>
+                        Century 21
+                    </h4>
+                    <svg width="68" height="42" viewBox="0 0 68 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.2842 0L45.2067 2.10421L62.2304 19.3467H0V22.3287H62.5035L45.1711 39.8958L47.2486 42L68 20.982L47.2842 0Z" fill="black"/>
+                    </svg>    
+                </div>
+            </div>
+        </div>
+        <div class="case">
+            <div class="caseImg">
+                <img src="img/logoSalud.png" class="saludPrevent" alt="">
+                <div class="subtext">
+                    <h4>
+                        Salud Prevent
+                    </h4>
+                    <svg width="68" height="42" viewBox="0 0 68 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M47.2842 0L45.2067 2.10421L62.2304 19.3467H0V22.3287H62.5035L45.1711 39.8958L47.2486 42L68 20.982L47.2842 0Z" fill="black"/>
+                    </svg>    
+                </div>
+            </div>
+            <div class="caseText">
                 <h3>Salud Prevent</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam assumenda amet vero impedit quia, repellendus, architecto unde eius a aspernatur ratione atque incidunt vitae maiores nobis, rem asperiores deserunt earum.</p>
+                <article>Contribuye a reducir complicaciones cardiológicas graves en pacientes de riesgo, a través de la educación y mejora de sus hábitos y conductas, actuando en la prevención. De igual manera brinda acceso a procedimientos de alta complejidad, creando alternativas de cobertura en instituciones de primer nivel como el ICBA.</article>
+                <div class="more" >
+                    <a href="saludPrevent.html">Read more</a>
+                    <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M22.9468 0L21.9385 1.002L30.2001 9.21271H0V10.6327H30.3326L21.9213 18.998L22.9295 20L33 9.99141L22.9468 0Z" fill="#4538DA"/>
+                    </svg>  
+                </div>
             </div>
-            <span><a href="#">Read more--></a></span>
-            <div class="article-img" id="article-img"></div>
-            </div>
-
+        </div>
     </section>
-    <footer>
-            <div class="form-container">
-                <h3 class="text-footer">Wanna build something greate together?</h3>
-                <form>
-                    <input id="form-name" class="form-name" placeholder="Nombre y Apellido" type="text" />
-                    <input id="form-mail" class="form-mail" placeholder="Mail" type="text" />
-                    <input id="form-text" class="form-text" placeholder="Por que se contacta" type="text" />
-                    <input id="submit" value="SEND" type="button" />
-                </form>
-            </div>
-            <div class="redes-footer"><h6><span class="bold">W - World</span>Consulting.</h6><h6>walter@wwclatam.com</h6><h6><a>Instagram</a></h6>
-            <h6><a>Linkedin</a></h6>
-            </div>
-    </footer>
+
+    <footer id="form"></footer>
+
+    <script type="text/javascript">
+      var footerTemplate = Handlebars.templates["footer"];
+
+      document.getElementById("form").innerHTML += footerTemplate();
+    </script>
 </body>
 </html>

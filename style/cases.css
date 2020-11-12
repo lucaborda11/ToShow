@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5rem auto;
+    align-items: center;
+}
+
+.container .case {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-around;
+    max-width: 50rem;
+    width: 50rem;
+    max-height: 37rem;
+    margin-top: 5rem;
+}
+
+.container .case .caseImg {
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 25rem;
+    width: 50%;
+}
+
+.container .case .caseImg .ivascular {
+    width: 10rem;
+}
+
+.container .case .caseImg .century {
+    width: 5rem;
+}
+
+.container .case .caseImg .saludPrevent {
+    width: 9rem;
+}
+
+.container .case .caseText {
+    max-width: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 3rem 0;
+}
+
+.container .case .caseImg .subtext {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    border-top: 1px solid black;
+    width: 90%;
+}
