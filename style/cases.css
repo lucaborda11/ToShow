@@ -15,9 +15,10 @@ body {
     display: flex;
     flex-direction: row;  
     justify-content: space-around;
-    max-width: 50rem;
-    width: 50rem;
-    max-height: 37rem;
+    max-width: 60rem;
+    width: 60rem;
+    max-height: 20rem;
+    height: 20rem;
     margin-top: 5rem;
 }
 
@@ -28,34 +29,71 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    max-width: 25rem;
+    max-width: 23rem;
+    width: 23rem;
+    max-height: 17rem;
+    height: 17rem;
     width: 50%;
 }
 
 .container .case .caseImg .ivascular {
-    width: 10rem;
+    width: 18rem;
 }
 
 .container .case .caseImg .century {
-    width: 5rem;
+    width: 7rem;
 }
 
 .container .case .caseImg .saludPrevent {
-    width: 9rem;
+    width: 19rem;
 }
 
 .container .case .caseText {
     max-width: 25rem;
+    margin: 0 2rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     padding: 3rem 0;
 }
 
+.container .case .caseText h3 {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container .case .caseText article {
+    font-weight: 300;
+}
+
+.container .case .caseText .more {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .case .caseText .more a{
+    color: #4538DA;
+    margin-right: 1rem ;
+}
+
+.container .case .caseText .more svg{
+    margin-top: 0.1rem;
+    color: #4538DA;
+}
+
 .container .case .caseImg .subtext {
     display: flex;
     justify-content: space-between;
-    margin: 2rem auto;
+    padding-top: 1rem;
     border-top: 1px solid black;
     width: 90%;
+}
+
+.container .case .caseImg .subtext svg {
+    width: 2.5rem;
+}
+
+.container .case .caseImg .subtext h4 {
+    font-weight: 400;
+    font-size: 1.5rem;
 }
