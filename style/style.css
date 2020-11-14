@@ -123,6 +123,22 @@ section {
   text-align: center;
 }
 
+.home_2 h4 {
+  background-color: white;
+  color: black;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.home_2 p {
+  background-color: white;
+  color: black;
+  font-size: 14;
+  font-weight: 500;
+  margin: 0;
+}
+
 .home_2 .index {
   z-index: 0;
   width: 2rem;
@@ -180,24 +196,9 @@ section {
   height: 13rem;
   background-color: white;
 }
+
 .home_2 .container .container_btn .readme .img svg {
   background-color: #ffffff;
-}
-
-.home_2 h4 {
-  background-color: white;
-  color: black;
-  padding: 1rem;
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.home_2 p {
-  background-color: white;
-  color: black;
-  font-size: 14;
-  font-weight: 500;
-  margin: 0;
 }
 
 .home_2 footer div {
