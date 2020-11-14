@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style/person.css">
     <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/title.css">
+    <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/team.css">
     <title>Team</title>
   </head>
   <body>
@@ -14,6 +17,7 @@
 
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/title.js"></script>
     <script type="text/javascript" src="js/person.js"></script>
 
     <header id="nav"></header>
@@ -24,9 +28,93 @@
         document.getElementById('nav').innerHTML += navTemplate()
     </script>
 
-    <div id="person"></div>
+    <div class="home_0"></div>
+
+    <section class="approach_1" id="title_0"></section>
 
     <script type="text/javascript">
+        var navTemplate = Handlebars.templates['title'];
+        var text = "La salud, la innovación, el desarrollo de equipos y la creación de  soluciones<br> basadas  en alianzas estratégicas, es su área de trabajo en las últimas tres décadas. A través de la gestión, el liderazgo y la ejecución junto con el conocimiento, la experiencia y  la apertura en la búsqueda de  soluciones sistémicas e integrales."
+        var firstLine = "Nuestro"
+        var secondLine = "Lider"
+
+        var data = {
+            text: text,
+            firstLine: firstLine,
+            secondLine: secondLine
+        }
+
+        document.getElementById('title_0').innerHTML += navTemplate(data)
+    </script>
+
+    <div class="background">
+      <img src="img/teamBackground.png" alt="">
+    </div>
+
+    <section class="team_1" >
+      <div class="president">
+        <div class="personPresident" id="personPresident"></div>
+
+        <script type="text/javascript">
+          var navTemplate = Handlebars.templates['person'];
+          var img = '<img class="img" src="img/president.png" alt="">'
+          var position = 'PRESIDENT'
+          var personName = 'Walter González'
+          var text = ''
+          var redes = '<a>LinkedIn</a>'
+  
+          var data = {
+            img: img,
+            position: position,
+            personName: personName,
+            description: text,
+            redes: redes
+          }
+  
+          document.getElementById('personPresident').innerHTML += navTemplate(data)
+        </script>
+
+      </div>
+      <div class="teamText">
+        <article>
+          Walter González desarrolló su carrera en posiciones de liderazgo en Corporaciones Europeas y Americanas del área farmacéutica y de dispositivos médicos, que sumados a su esencia de entrepreneur, facilitan el proceso de conformación de equipos de alta performance con foco en el cliente.
+        </article>
+        <div class="divider"></div>
+        <p>ALDP Program Boston Scientific.</p>
+        <br>
+        <br>
+        <article>
+          La oportunidad de trabajar en los países más grandes de Latino América, le ha permitidó construir un capital humano y desarrollo de red de personas con perfil de liderazgo en cada territorio de esta región tan diversa. 
+          Su foco ha sido la construcción de nuevos modelos de negocio,  brindando soluciones de acceso y prevención en la Salud y Proyectos habitacionales en toda la región
+          WWC tiene como fin último, colaborar con las organizaciones en el desafiante proceso de la innovación y su transformación que le permitan  capitalizar nuevas oportunidades
+        </article>
+        <img src="img/teamImg.png" alt="">
+        <p>Mike Mahoney | CEO de Boston Scientific</p>
+        <p>Ortíz | Presidente Latam de Boston Scientific</p>
+      </div>      
+    </section>
+
+    <section class="approach_1" id="title_1"></section>
+
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates['title'];
+        var text = "Las personas son el factor del éxito.<br> Un equipo con experiencia, conocimiento y diversidad de formación es nuestra propuesta de valor. Catalizamos procesos y apalancamos resultados minimizando errores, y asi alcanzar un crecimiento rentable y sostenible. La sinergia es nuestro fin último y esto solo puede ser logrado con  actitud positiva  en un entorno organizacional de confianza y transparencia."
+        var firstLine = "Nuestro"
+        var secondLine = "Equipo"
+
+        var data = {
+            text: text,
+            firstLine: firstLine,
+            secondLine: secondLine
+        }
+
+        document.getElementById('title_1').innerHTML += navTemplate(data)
+    </script>
+
+    <section class="teamPersons">
+      <div id="person1"></div><div id="person2"></div>
+
+      <script type="text/javascript">
         var navTemplate = Handlebars.templates['person'];
         var img = '<img class="img" src="img/person1.png" alt="">'
         var position = 'CD'
@@ -42,62 +130,29 @@
           redes: redes
         }
 
-        document.getElementById('person').innerHTML += navTemplate(data)
-    </script>
+        document.getElementById('person1').innerHTML += navTemplate(data)
+      </script>
 
-    <section class="team_1" id="team_1">
-      <h2 class="title">Our Team</h2>
-      <span class="flecha"></span>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique
-        culpa itaque possimus, quos accusantium iusto voluptate temporibus
-        provident, et perspiciatis dicta commodi ab ipsa, ea beatae velit. Harum
-        eos obcaecati minus recusandae? Nam nulla fugit quibusdam illo vitae
-        quo, suscipit sapiente modi neque tempore sequi veritatis numquam
-        aperiam explicabo ipsa exercitationem omnis itaque quas eaque asperiores
-        esse id. Quis magni, quo omnis, laborum repellat placeat maiores
-        molestias assumenda voluptates incidunt dolor in, praesentium
-        voluptatem? Perferendis praesentium veritatis vitae aliquam iste amet
-        sit ullam mollitia consequatur quod aspernatur repudiandae sunt
-        perspiciatis, officia, harum voluptatem cum, ratione distinctio
-        assumenda excepturi suscipit voluptas!
-      </p>
+      <script type="text/javascript">
+          var navTemplate = Handlebars.templates['person'];
+          var img = '<img class="img" src="img/person2.png" alt="">'
+          var position = 'IM'
+          var personName = 'Fabián Cassan'
+          var text = 'Especialista en estrategias de inbound marketing para generar relaciones duraderas con los clientes.'
+          var redes = '<a>LinkedIn</a>'
+
+          var data = {
+            img: img,
+            position: position,
+            personName: personName,
+            description: text,
+            redes: redes
+          }
+
+          document.getElementById('person2').innerHTML += navTemplate(data)
+      </script>
     </section>
-    <section class="team_2">
-      <div class="profile">
-        <img src="#" />
-        <h6 class="subtitle">PRESIDENT</h6>
-        <h3 class="name">Walter Gonzalez</h3>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          velit consectetur similique impedit ullam blanditiis! Quo nobis
-          praesentium temporibus possimus.
-        </p>
-        <a href="#" class="ld">Linkedin</a>
-      </div>
-      <div class="profile">
-        <img src="#" />
-        <h6 class="subtitle">PRESIDENT</h6>
-        <h3 class="name">Walter Gonzalez</h3>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          velit consectetur similique impedit ullam blanditiis! Quo nobis
-          praesentium temporibus possimus.
-        </p>
-        <a href="#" class="ld">Linkedin</a>
-      </div>
-      <div class="profile">
-        <img src="#" />
-        <h6 class="subtitle">PRESIDENT</h6>
-        <h3 class="name">Walter Gonzalez</h3>
-        <p class="description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur
-          velit consectetur similique impedit ullam blanditiis! Quo nobis
-          praesentium temporibus possimus.
-        </p>
-        <a href="#" class="ld">Linkedin</a>
-      </div>
-    </section>
+
 
     <footer id="form"></footer>
 
