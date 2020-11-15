@@ -95,6 +95,7 @@ header .redes_container .redes select::-ms-expand {
     border-bottom: black;
     border-bottom-width: 1px;
     border-bottom-style: solid;
+    text-decoration: none;
 }
 
 .main_nav a:hover{
