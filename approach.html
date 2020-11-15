@@ -5,6 +5,8 @@
     <link rel="stylesheet" href="style/title.css">
     <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/fonts.css">
+    <link rel="stylesheet" href="style/enfoque.css">
     <title>Approach</title>
 </head>
 <body>
@@ -16,6 +18,7 @@
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/title.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/paso.js"></script>
 
     <script type="text/javascript">
         var navTemplate = Handlebars.templates['nav'];
@@ -31,8 +34,8 @@
         var navTemplate = Handlebars.templates['title'];
         var text = "Vamos profundo para desbloquear la información y tener el coraje de actuar, tabajando con nuestros clientes en crear las capacidades que les permitan a la organización lograr los resultados claves.<br>"
         text += "Nuestro equipo tiene un enfoque innovador porque busca el éxito a través del conocimiento pero aplicado en una forma diferente a la usada previamente."
-        var firstLine = "Our"
-        var secondLine = "Approach"
+        var firstLine = "Nuestro"
+        var secondLine = "Enfoque"
 
         var data = {
             text: text,
@@ -43,87 +46,62 @@
         document.getElementById('approach_1').innerHTML += navTemplate(data)
     </script>
 
-    <section class="approach_2">
-        <div class="container">
-            <div class="title-container">
-                <div class="number">01</div>
-                <div class="title">
-                    <h3 class="title-approach">Find the problem.</h3>
-                    <p class="text-approach">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem sunt magni pariatur magnam assumenda laboriosam repellat, deserunt labore quidem minima voluptates fuga voluptate minus ex eos, nam molestias harum modi.</p>
-                </div>
-            </div>
-            <span class="divider-approach">-----</span>
-            <div class="subtitle">
-                <h4 class="title-subtitle">Marketing Research</h4>
-                <span class="cross">+</span>
-                <p class="subtext-approach">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas libero eveniet ducimus blanditiis hic quibusdam modi deserunt, cupiditate sapiente vero quasi laborum vitae aut atque quidem placeat, quod ratione!</p>
-            </div>
-            <span class="divider-approach">-----</span>
-            <div class="subtitle">
-                <h4 class="title-subtitle">Listen to your team</h4>
-                <span class="cross">+</span>
-                <p class="subtext-approach">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas libero eveniet ducimus blanditiis hic quibusdam modi deserunt, cupiditate sapiente vero quasi laborum vitae aut atque quidem placeat, quod ratione!</p>
-            </div>
-            <span class="divider-approach">-----</span>
-            <div class="subtitle">
-                <h4 class="title-subtitle">Analayze the Problem</h4>
-                <span class="cross">+</span>
-                <p class="subtext-approach">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas libero eveniet ducimus blanditiis hic quibusdam modi deserunt, cupiditate sapiente vero quasi laborum vitae aut atque quidem placeat, quod ratione!</p>
-            </div>
-            <span class="divider-approach">-----</span>
-        </div>
+    <section class="pasos">
+        <div id="paso1"></div>
+        <div id="paso2"></div>
+        <div id="paso3"></div>
 
-        <div class="container">
-            <div class="title-container">
-                <div class="number">02</div>
-                <div class="title">
-                    <h3 class="title-approach">Research and Analysis.</h3>
-                    <p class="text-approach">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem sunt magni pariatur magnam assumenda laboriosam repellat, deserunt labore quidem minima voluptates fuga voluptate minus ex eos, nam molestias harum modi.</p>
-                </div>
-            </div>
-            <span class="divider-approach">-----</span>
-            <div class="subtitle">
-                <h4 class="title-subtitle">Distribution Research</h4>
-                <span class="cross">+</span>
-                <p class="subtext-approach">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas libero eveniet ducimus blanditiis hic quibusdam modi deserunt, cupiditate sapiente vero quasi laborum vitae aut atque quidem placeat, quod ratione!</p>
-            </div>
-            <span class="divider-approach">-----</span>
-            <div class="subtitle">
-                <h4 class="title-subtitle">Pricing Research</h4>
-                <span class="cross">+</span>
-                <p class="subtext-approach">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas libero eveniet ducimus blanditiis hic quibusdam modi deserunt, cupiditate sapiente vero quasi laborum vitae aut atque quidem placeat, quod ratione!</p>
-            </div>
-            <span class="divider-approach">-----</span>
-        </div>
+        <script type="text/javascript">
+            var navTemplate = Handlebars.templates['paso'];
+            var number = '01'
+            var titulo = 'Encontrar el problema'
+            var text = "¿Qué problema se resuelve primero? No importa. Con tiempo y energía, se arregla el que más repercusión tenga en el balance final."
+            var list = "<div>Marketing Research</div><div>Escuchar a tu equipo</div><div>Analizar el problema </div>"
+    
+            var data = {
+                number: number,
+                titulo: titulo,
+                description: text,
+                pasos: list
+            }
+    
+            document.getElementById('paso1').innerHTML += navTemplate(data)
+        </script>
 
-        <div class="container">
-            <div class="title-container">
-                <div class="number">03</div>
-                <div class="title">
-                    <h3 class="title-approach">Applying solution.</h3>
-                    <p class="text-approach">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem sunt magni pariatur magnam assumenda laboriosam repellat, deserunt labore quidem minima voluptates fuga voluptate minus ex eos, nam molestias harum modi.</p>
-                </div>
-            </div>
-            <span class="divider-approach">-----</span>
-            <div class="subtitle">
-                <h4 class="title-subtitle">Project Managment</h4>
-                <span class="cross">+</span>
-                <p class="subtext-approach">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas libero eveniet ducimus blanditiis hic quibusdam modi deserunt, cupiditate sapiente vero quasi laborum vitae aut atque quidem placeat, quod ratione!</p>
-            </div>
-            <span class="divider-approach">-----</span>
-            <div class="subtitle">
-                <h4 class="title-subtitle">Human Capital Managment</h4>
-                <span class="cross">+</span>
-                <p class="subtext-approach">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas libero eveniet ducimus blanditiis hic quibusdam modi deserunt, cupiditate sapiente vero quasi laborum vitae aut atque quidem placeat, quod ratione!</p>
-            </div>
-            <span class="divider-approach">-----</span>
-            <div class="subtitle">
-                <h4 class="title-subtitle">Business Process Services</h4>
-                <span class="cross">+</span>
-                <p class="subtext-approach">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque quas libero eveniet ducimus blanditiis hic quibusdam modi deserunt, cupiditate sapiente vero quasi laborum vitae aut atque quidem placeat, quod ratione!</p>
-            </div>
-            <span class="divider-approach">-----</span>
-        </div>
+        <script type="text/javascript">
+            var navTemplate = Handlebars.templates['paso'];
+            var number = '02'
+            var titulo = 'Análisis'
+            var text = "Ya sea que lo sepa o no, el dueño del negocio, no sólo necesita contar con la información, sino también con un análisis profundo que permita un diagnóstico claro de situación."
+            var list = "<div>Distribution Research</div><div>Pricing research</div>"
+
+            var data = {
+                number: number,
+                titulo: titulo,
+                description: text,
+                pasos: list
+            }
+
+            document.getElementById('paso2').innerHTML += navTemplate(data)
+        </script>
+
+        <script type="text/javascript">
+            var navTemplate = Handlebars.templates['paso'];
+            var number = '03'
+            var titulo = 'Aplicando soluciones'
+            var text = "Desarrollamos un plan estratégico a partir de la identificación del problema u oportunidad, sumado a un profundo análisis de todas las variables. La ejecución es la llave del éxito y esto es lo que nos diferencia."
+            var list = "<div>Project Managment</div><div>Human Capital Management</div><div>Business Process Services</div>"
+
+            var data = {
+                number: number,
+                titulo: titulo,
+                description: text,
+                pasos: list
+            }
+
+            document.getElementById('paso3').innerHTML += navTemplate(data)
+        </script>
+        
     </section>
 
     <footer id='form'></footer>
