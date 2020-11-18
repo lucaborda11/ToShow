@@ -242,7 +242,7 @@ body {
   }
 
   .home_2 {
-    height: ;
+    height: auto;
   }
 
   .home_2 .index {
@@ -251,9 +251,6 @@ body {
 
   .home_2 .container .container_btn {
     flex-direction: column;
-  }
-
-  .home_2 .container .container_btn {
     margin: 0 auto;
   }
 

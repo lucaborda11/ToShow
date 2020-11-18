@@ -61,7 +61,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     color: #f6f6f6;
-    font-family: 'Grotesk';
 }
 
 .containerFlow div {
@@ -73,7 +72,7 @@ body {
     background-color: white;
 }
 
-.containerFlow .container .container_btn .readme .img p{
+.containerFlow .container_btn .readme .img p{
     background-color: #ffffff;
     font-weight: 300;
 }
@@ -181,4 +180,86 @@ body {
 .container .case .caseImg .subtext h4 {
     font-weight: 400;
     font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1150px) {
+    .containerFlow {
+      height: auto;
+    }
+  
+    .containerFlow .container_btn {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+  
+    .containerFlow .container_btn .readme{
+      margin: 0 auto;
+      margin-bottom: 2rem;
+    }
+  
+    .containerFlow .container_btn .readme p{
+      font-size: 1rem;
+    }
+  
+    .containerFlow h1 {
+      margin-left: 0;
+      font-size: 3rem;
+    }
+  
+}
+
+@media screen and (max-width: 980px) {
+  
+    .container .case {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .container .caseReverse {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .containerFlow .container_btn .readme{
+        width: 18rem;
+    }
+  
+    .container .case .caseImg {
+        min-height: 200px;
+        margin: 0 auto;
+    }
+
+    .container .case .caseImg img{
+        max-height: 120px;
+    }
+  
+    .container .case .caseText {
+        margin: 0 auto;
+    }
+  
+    .container .case .caseText h3 {
+        display: none;
+    }
+  
+}
+  
+@media screen and (max-width: 500px) {
+  
+    .containerFlow h1 {
+      margin-left: 0;
+      font-size: 2rem;
+    }
+
+    .containerFlow .container_btn .readme{
+        width: 100%;
+    }
+  
+    .container .case .caseImg {
+        min-width: 80%;
+    }
+
+    .container .case .caseImg img{
+        max-width: 248px;
+    }
+  
 }
