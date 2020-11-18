@@ -60,3 +60,53 @@
     font-weight: 400;
 }
 
+.approach_1 .title .flecha {
+    margin-left: 3rem;
+}
+
+.approach_1 {
+    padding: 10% 5% 5% 5%;;
+}
+
+@media screen and (max-width: 1210px) {
+    .mission_2 .container .text { 
+        margin-right: 1rem;
+    }
+}
+
+@media screen and (max-width: 1126px) {
+    .mission_2 .container .black,
+    .mission_2 .container .white  {
+        flex-direction: column;
+        height: auto; 
+        padding: 0;
+        padding-bottom: 3rem;
+    }
+
+    .mission_2 .container .text { 
+        margin-right: 1rem;
+        align-self: flex-end;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mission_2 .container .black,
+    .mission_2 .container .white  {
+        width: 100%;
+    }
+
+    .mission_2 .container {
+        width: 100%;
+        margin: 0;
+    }
+
+    .mission_2 .container .text .description p {
+        font-size: 1.2rem;
+        font-weight: 300;
+        border: none;
+    }
+
+    .mission_2 .container img {
+        width: 320;
+    }
+}
