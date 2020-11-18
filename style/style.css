@@ -25,16 +25,13 @@ body {
   font-family: "Grotesk";
 }
 
-section {
-  height: 100vh;
-}
-
 .home_0 {
   height: 6rem;
   width: 100%;
 }
 
 .home_1 {
+  height: 100vh;
   padding: 0 5%;
   display: flex;
   flex-direction: row;
@@ -78,8 +75,8 @@ section {
   height: 80%;
 }
 
-.home_1 .container h1 {
-  font-weight: 500;
+.home_1 .container .title {
+  font-weight: 400;
   font-size: 5.5rem;
 }
 
@@ -89,14 +86,20 @@ section {
   margin-top: 6%;
 }
 
-.home_1 .container h1 span {
+.home_1 .container .title span {
   border-bottom: white;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   padding-bottom: 0.3rem;
   display: inline-block;
 }
+
+.home_1 .container .title .responsive {
+  display: none;
+}
+
 .home_2 {
+  min-height: 100vh;
   padding: 0 5%;
   background-color: #f6f6f6;
   display: flex;
@@ -209,98 +212,89 @@ section {
   background-color: black;
 }
 
-.home_3 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding-right: 5%;
+@media screen and (max-width: 1150px) {
+
+
+  .home_1 .index {
+    display: none
+  }
+
+  .home_1 .container {
+    flex-direction: column;
+    margin: 2rem auto;
+    padding: 0;
+  }
+
+  .home_1 .container .title .responsive {
+    display: block;
+    text-align: center;
+  }
+  .home_1 .container .title .responsive span {
+    font-size: 6.5rem;
+  }
+
+  .home_1 .container .title .default {
+    display: none;
+  }
+
+  .home_1 .imagen {
+    display: none;
+  }
+
+  .home_2 {
+    height: ;
+  }
+
+  .home_2 .index {
+    display: none;
+  }
+
+  .home_2 .container .container_btn {
+    flex-direction: column;
+  }
+
+  .home_2 .container .container_btn {
+    margin: 0 auto;
+  }
+
+  .home_2 .container .container_btn .readme{
+    margin-bottom: 2rem;
+  }
+
+  .home_2 .container .container_btn .readme p{
+    font-size: 1rem;
+  }
+
+  .home_2 .container h1 {
+    margin-left: 0;
+    font-size: 3rem;
+  }
+
+  .home_2 .container h2 {
+    margin-left: 0;
+    font-size: 1.7rem;
+  }
+
 }
 
-.home_3 svg {
-  fill: white;
-}
+@media screen and (max-width: 500px) {
+  .home_1 .container .title .responsive span {
+    font-size: 3rem;
+    margin: 0 auto;
+  }
 
-.home_3 .text svg {
-  background-color: white;
-  fill: black;
-  transform: rotate(180deg);
-}
+  .home_2 .container h1 {
+    margin-left: 0;
+    font-size: 2rem;
+  }
 
-.home_3 .flecha_r {
-  transform: rotate(180deg);
-}
+  .home_2 .container h2 {
+    margin-left: 0;
+    font-size: 1.2rem;
+  }
 
-.home_3 .text b {
-  color: black;
-  background-color: white;
-}
+  .home_2 .container .container_btn .readme{
+    width: 18rem;
+  }
 
-.home_3 .text {
-  font-size: 20;
-}
-
-.home_3 .brand {
-  background: white;
-  width: 40%;
-  height: 60%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 1rem 2rem;
-}
-
-.home_3 .brand p {
-  background-color: white;
-  color: black;
-}
-
-.home_3 .brand span {
-  background-color: white;
-  color: black;
-}
-
-.home_3 .brand .text {
-  background-color: white;
-  color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.home_3 .brand .divider {
-  height: 1px;
-  width: 100%;
-  background-color: black;
-}
-
-.home_3 .brand .img {
-  background-color: #f6f6f6;
-  height: 65%;
-  width: 100%;
-}
-
-.home_3 .index {
-  width: 2rem;
-  margin-top: 10%;
-  height: 250px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.home_3 footer {
-  margin-left: 2rem;
-  background-color: black;
-  color: white;
-}
-.home_3 footer div {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  transform: rotate(180deg);
-}
-.home_3 footer .divider {
-  background-color: white;
-  height: 120px;
-  width: 1px;
 }
