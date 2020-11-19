@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/case.css">
     <link rel="stylesheet" href="style/titleCase.css">
+    <link rel="stylesheet" href="style/responsiveNav.css">
+    <link rel="stylesheet" href="style/fonts.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,9 +17,11 @@
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
     <script type="text/javascript" src="js/case.js"></script>
+    <script type="text/javascript" src="js/responsiveNav.js"></script>
     <script type="text/javascript" src="js/titleCase.js"></script>
 
     <header id="nav"></header>
+    <div id="navResp" class="navResp"></div>
 
     <script type="text/javascript">
         var navTemplate = Handlebars.templates['nav'];
@@ -26,6 +30,12 @@
     </script>
 
     <div id="title"></div>
+
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates["responsiveNav"];
+
+        document.getElementById("navResp").innerHTML += navTemplate();
+    </script>
 
     <script type="text/javascript">
         var navTemplate = Handlebars.templates['titleCase'];
@@ -73,5 +83,7 @@
 
         document.getElementById('form').innerHTML += footerTemplate()
     </script>
+
+    <script type="text/javascript" src="js/responsiveNavUtility.js"></script>
 </body>
 </html>

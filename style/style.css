@@ -25,6 +25,10 @@ body {
   font-family: "Grotesk";
 }
 
+.navRes {
+  display: none;
+}
+
 .home_0 {
   height: 6rem;
   width: 100%;
@@ -214,6 +218,9 @@ body {
 
 @media screen and (max-width: 1150px) {
 
+  .navRes {
+    display: block;
+  }
 
   .home_1 .index {
     display: none

@@ -5,6 +5,10 @@ body {
     padding: 0%;
 }
 
+.navRes {
+    display: none;
+}
+
 .containerFlow {
     display: flex;
     flex-direction: column;
@@ -204,6 +208,10 @@ body {
     .containerFlow h1 {
       margin-left: 0;
       font-size: 3rem;
+    }
+
+    .navRes {
+        display: block;
     }
   
 }

@@ -57,6 +57,12 @@ body {
     border-bottom: 1px solid #ffffff;
 }
 
+@media screen and (max-width: 1150px) {
+  .navResp{ 
+      display: block;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .header {
     flex-direction: column;
