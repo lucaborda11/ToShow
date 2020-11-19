@@ -52,3 +52,42 @@ body{
     padding: 5% 10%;
 }
 
+@media screen and (max-width: 765px) {
+    .team_1 {
+        flex-direction: column;
+    }
+
+    .team_1 .president {
+        margin: 0 auto;
+    }
+
+    .team_1 .teamText .divider {
+        height: 5rem;
+    }
+
+    .team_1 .teamText {
+        margin: 0 auto;
+        margin-top: -7rem;
+        width: 95%;
+    }
+
+    .team_1 .president .personPresident {
+        padding-left: 0;
+        margin: 0 auto;
+        margin-top: -11rem;
+    }
+
+    .team_1 .president .personContainer {
+        width: auto;
+    }
+
+    .team_1 img {
+        width: 300px;
+        margin-bottom: 1rem;
+    }
+
+    .teamPersons {
+        flex-direction: column;
+    }
+
+}

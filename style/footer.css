@@ -27,10 +27,12 @@
 
 }
 .footer .container_1 .text-footer{
+    font-weight: 400;
     font-size: 2.5rem;
 
 }
 .footer .container_2{
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,11 +41,12 @@
 .footer .container_2 .formulario{
     display:flex;
     justify-content: space-around;
-    background-color: #f6f6f6;
+    background-color: transparent;
     padding: 2rem;
     margin-top:2.5rem;
 }
 .footer .input_container{
+    background-color: transparent;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -115,7 +118,51 @@
 }
 .footer .redes-footer .redes a{
     color: #4538DA;
-    font-weight: 700;
+    font-weight: 400;
     border-bottom: 2px solid #4538DA;
     cursor: pointer;
+}
+
+.footer .redes-footer .redes .mail{
+    border: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer .container_1 {
+        width: 100%;
+    }
+
+    .footer .container_2 {
+        width: 100%;
+    }
+
+    .footer .formulario .input_container {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .footer .formulario textarea {
+        width: 100%;
+        height: 10rem;
+    }
+
+    .footer .formulario {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .footer .container_1 .text-footer {
+        font-size: 2.5rem;
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    .footer .redes-footer {
+        display: none;
+    }
+
 }
