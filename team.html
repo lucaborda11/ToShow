@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="style/title.css">
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/responsiveNav.css">
     <link rel="stylesheet" href="style/team.css">
     <title>Team</title>
   </head>
@@ -19,13 +20,21 @@
     <script type="text/javascript" src="js/footer.js"></script>
     <script type="text/javascript" src="js/title.js"></script>
     <script type="text/javascript" src="js/person.js"></script>
+    <script type="text/javascript" src="js/responsiveNav.js"></script>
 
     <header id="nav"></header>
+    <div id="navResp" class="navResp"></div>
 
     <script type="text/javascript">
         var navTemplate = Handlebars.templates['nav'];
 
         document.getElementById('nav').innerHTML += navTemplate()
+    </script>
+
+    <script type="text/javascript">
+      var navTemplate = Handlebars.templates["responsiveNav"];
+
+      document.getElementById("navResp").innerHTML += navTemplate();
     </script>
 
     <div class="home_0"></div>
@@ -161,5 +170,7 @@
 
       document.getElementById("form").innerHTML += footerTemplate();
     </script>
+    
+    <script type="text/javascript" src="js/responsiveNavUtility.js"></script>
   </body>
 </html>

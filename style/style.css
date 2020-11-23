@@ -25,6 +25,10 @@ body {
   font-family: "Grotesk";
 }
 
+.navRes {
+  display: none;
+}
+
 .home_0 {
   height: 6rem;
   width: 100%;
@@ -214,6 +218,9 @@ body {
 
 @media screen and (max-width: 1150px) {
 
+  .navRes {
+    display: block;
+  }
 
   .home_1 .index {
     display: none
@@ -275,6 +282,29 @@ body {
 }
 
 @media screen and (max-width: 500px) {
+  .home_1 {
+    flex-direction: column-reverse;
+    padding-left: 5%;
+    padding-right: 0;
+  }
+  
+  .home_1 .imagen {
+    display: block;
+    width: auto;
+  }
+  
+  .home_1 .imagen img{
+    margin-top: 0;
+  }
+  
+  .home_1 .container {
+    margin-bottom: 5rem;
+  }
+
+  .home_1 .container .title .responsive {
+    text-align: left;
+  }
+
   .home_1 .container .title .responsive span {
     font-size: 3rem;
     margin: 0 auto;

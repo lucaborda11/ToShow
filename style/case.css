@@ -2,12 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
- }
+}
 
- body {
+body {
      background-color: #F6F6F6;
      color: black;
- }
+}
+
+.navRes {
+    display: none;
+}
 
 .bodyCase {
     display: flex;
@@ -121,4 +125,62 @@
 
 .infoNext .logoContainer .nextCase svg:hover{
     cursor: pointer;
+}
+
+@media screen and (max-width: 1150px) {
+    .navRes {
+        display: block;
+    }
+
+    .bodyCase {
+        margin: 0 2%;
+        margin-top: 3rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .bodyCase {
+        flex-direction: column;
+    }
+    
+    .bodyCase .textCase p {
+        font-size: 1.4rem;
+        text-align: left;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+        width: auto;
+    }
+
+    .bodyCase .img {
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .infoNext {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .infoNext .infoCase {
+        justify-content: space-around;
+        flex-direction: row;
+        margin-bottom: 5rem;
+    }
+
+    .infoNext .logoContainer .nextCase {
+        padding-left: 50%;
+    }
+    
+    .bodyCase .textCase p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .logo,
+    .bodyCase .img img{
+        max-width: 310px;
+    }
+
 }
