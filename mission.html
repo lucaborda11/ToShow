@@ -27,7 +27,15 @@
     <script type="text/javascript">
       var navTemplate = Handlebars.templates["nav"];
 
-      document.getElementById("nav").innerHTML += navTemplate();
+      data = {
+        home: 'Inicio',
+        mision: 'Mision',
+        approach: 'Enfoque',
+        team: 'Equipo',
+        cases: 'Proyectos'
+      }
+
+      document.getElementById('nav').innerHTML += navTemplate(data)
     </script>
 
     <script type="text/javascript">
@@ -95,7 +103,11 @@
     <script type="text/javascript">
       var footerTemplate = Handlebars.templates["footer"];
 
-      document.getElementById("form").innerHTML += footerTemplate();
+        data = {
+            text_1: '¿Construimos algo grande juntos?'
+        }
+
+        document.getElementById('form').innerHTML += footerTemplate(data)
     </script>
 
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>
