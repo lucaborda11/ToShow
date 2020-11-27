@@ -2,17 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/case.css">
     <link rel="stylesheet" href="style/titleCase.css">
     <link rel="stylesheet" href="style/responsiveNav.css">
+    <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/fonts.css">
-    <title>Document</title>
+    <title>Century 21</title>
 </head>
 <body>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+    ></script>
 
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
@@ -20,14 +23,14 @@
     <script type="text/javascript" src="js/responsiveNav.js"></script>
     <script type="text/javascript" src="js/titleCase.js"></script>
 
-    <header id="nav"></header>
     <div id="navResp" class="navResp"></div>
+    <header id="nav"></header>
 
     <script type="text/javascript">
-        var navTemplate = Handlebars.templates['nav'];
-
-        document.getElementById('nav').innerHTML += navTemplate()
-    </script>
+        var navTemplate = Handlebars.templates["nav"];
+  
+        document.getElementById("nav").innerHTML += navTemplate();
+      </script>
 
     <div id="title"></div>
 

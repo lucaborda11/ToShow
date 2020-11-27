@@ -124,7 +124,7 @@
 }
 
 .window .header ul.menu li.menu-item:nth-child(6) {
-	 transition-delay: 0.14s;
+	transition-delay: 0.14s;
 }
 
 .window .header ul.menu li.menu-item:nth-child(7) {
@@ -198,7 +198,22 @@
 
 .window .header.menu-opened ul.menu li.menu-item:nth-child(7) {
 	 transition-delay: 0.69s;
-}
+	 display: flex;
+	 flex-direction: row-reverse;
+	 border: none;
+ }
+ 
+ .window .header ul.menu li.menu-item:nth-child(7) svg {
+	 fill: white;
+	 margin-left: 2rem;
+	 width: 45px;
+	 height: 45px;
+ }
+ 
+ .window .header ul.menu li.menu-item:nth-child(7) a {
+	 width: 45px;
+	 margin-right: 2rem;
+ }
 
 .window .header.menu-opened .icon.icon-bag {
 	 transform: translateX(75px);
