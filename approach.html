@@ -27,7 +27,25 @@
     <script type="text/javascript">
         var navTemplate = Handlebars.templates['nav'];
 
-        document.getElementById('nav').innerHTML += navTemplate()
+        data = {
+            es: {
+                home: 'Inicio',
+                mision: 'Mision',
+                approach: 'Enfoque',
+                team: 'Equipo',
+                cases: 'Proyectos'
+            },
+            en: {
+                home: 'Home',
+                mision: 'Mission',
+                approach: 'Approach',
+                team: 'Team',
+                cases: 'Cases'
+            }
+
+        }
+
+        document.getElementById('nav').innerHTML += navTemplate(data['en'])
     </script>
 
 
@@ -48,13 +66,24 @@
         var firstLine = "Nuestro"
         var secondLine = "Enfoque"
 
+        var text_en = "We go deep to unlock information and have the courage to act. We work with our clients to create the capabilities that allow the organization to achieve key results. Our team has an innovative approach because it seeks success through knowledge but applied in a different way than previously used."
+        var firstLine_en = "Our"
+        var secondLine_en = "Approach"
+
         var data = {
-            text: text,
-            firstLine: firstLine,
-            secondLine: secondLine
+            es: {
+                text: text,
+                firstLine: firstLine,
+                secondLine: secondLine
+            },
+            en: {
+                text: text_en,
+                firstLine: firstLine_en,
+                secondLine: secondLine_en
+            }
         }
 
-        document.getElementById('approach_1').innerHTML += navTemplate(data)
+        document.getElementById('approach_1').innerHTML += navTemplate(data['en'])
     </script>
 
     <section class="pasos">
@@ -68,15 +97,27 @@
             var titulo = 'Encontrar el problema'
             var text = "¿Qué problema se resuelve primero? No importa. Con tiempo y energía, se arregla el que más repercusión tenga en el balance final."
             var list = "<div>Marketing Research</div><div>Escuchar a tu equipo</div><div>Analizar el problema </div>"
+
+            var titulo_en = 'Find the problem'
+            var text_en = "Which problem is solved first? Does not matter. With time and energy, the one that has the most impact on the bottom line is fixed."
+            var list_en = "<div>Marketing Research</div><div>Listen to your team</div><div>Analyze the problem </div>"
     
             var data = {
-                number: number,
-                titulo: titulo,
-                description: text,
-                pasos: list
+                es: {
+                    number: number,
+                    titulo: titulo,
+                    description: text,
+                    pasos: list
+                },
+                en: {
+                    number: number,
+                    titulo: titulo_en,
+                    description: text_en,
+                    pasos: list_en
+                }
             }
-    
-            document.getElementById('paso1').innerHTML += navTemplate(data)
+
+            document.getElementById('paso1').innerHTML += navTemplate(data['en'])
         </script>
 
         <script type="text/javascript">
@@ -86,14 +127,25 @@
             var text = "Ya sea que lo sepa o no, el dueño del negocio, no sólo necesita contar con la información, sino también con un análisis profundo que permita un diagnóstico claro de situación."
             var list = "<div>Distribution Research</div><div>Pricing research</div>"
 
+            var titulo_en = 'Analysis'
+            var text_en = "Whether he knows it or not, the business owner not only needs to have the information, but also a deep analysis that allows a diagnosis clear of the situation."
+
             var data = {
-                number: number,
-                titulo: titulo,
-                description: text,
-                pasos: list
+                es: {
+                    number: number,
+                    titulo: titulo,
+                    description: text,
+                    pasos: list
+                },
+                en: {
+                    number: number,
+                    titulo: titulo_en,
+                    description: text_en,
+                    pasos: list
+                }
             }
 
-            document.getElementById('paso2').innerHTML += navTemplate(data)
+            document.getElementById('paso2').innerHTML += navTemplate(data['en'])
         </script>
 
         <script type="text/javascript">
@@ -103,14 +155,25 @@
             var text = "Desarrollamos un plan estratégico a partir de la identificación del problema u oportunidad, sumado a un profundo análisis de todas las variables. La ejecución es la llave del éxito y esto es lo que nos diferencia."
             var list = "<div>Project Managment</div><div>Human Capital Management</div><div>Business Process Services</div>"
 
+            var titulo_en = 'Applying solutions'
+            var text_en = "We develop a strategic plan from the identification of the problem or opportunity, added to a deep analysis of all the variables. Execution is the key to success and this is what sets us apart."
+
             var data = {
-                number: number,
-                titulo: titulo,
-                description: text,
-                pasos: list
+                es: {
+                    number: number,
+                    titulo: titulo,
+                    description: text,
+                    pasos: list
+                },
+                en: {
+                    number: number,
+                    titulo: titulo_en,
+                    description: text_en,
+                    pasos: list
+                }
             }
 
-            document.getElementById('paso3').innerHTML += navTemplate(data)
+            document.getElementById('paso3').innerHTML += navTemplate(data['es'])
         </script>
         
     </section>
@@ -120,7 +183,18 @@
     <script type="text/javascript">
         var footerTemplate = Handlebars.templates['footer'];
 
-        document.getElementById('form').innerHTML += footerTemplate()
+        var data = {
+            es: {
+                text_1: '¿Construimos algo grande juntos?'
+            },
+            en: {
+                text_1: 'Do we build something big together? '
+            }
+        }
+
+        //var language = localStorage.getItem('lang')
+
+        document.getElementById('form').innerHTML += footerTemplate(data['en'])
     </script>
     
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>

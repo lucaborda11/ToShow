@@ -23,11 +23,30 @@
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
     <script type="text/javascript" src="js/responsiveNav.js"></script>
+    <script type="text/javascript" src="js/mission.js"></script>
 
     <script type="text/javascript">
       var navTemplate = Handlebars.templates["nav"];
 
-      document.getElementById("nav").innerHTML += navTemplate();
+      data = {
+            es: {
+                home: 'Inicio',
+                mision: 'Mision',
+                approach: 'Enfoque',
+                team: 'Equipo',
+                cases: 'Proyectos'
+            },
+            en: {
+                home: 'Home',
+                mision: 'Mission',
+                approach: 'Approach',
+                team: 'Team',
+                cases: 'Cases'
+            }
+
+        }
+
+        document.getElementById('nav').innerHTML += navTemplate(data['es'])
     </script>
 
     <script type="text/javascript">
@@ -38,7 +57,7 @@
 
     <section class="home_0"></section>
 
-    <section class="approach_1" id="mission_1"></section>
+    <section class="approach_1" id="approach_1"></section>
 
     <script type="text/javascript">
         var navTemplate = Handlebars.templates['title'];
@@ -46,56 +65,67 @@
         var firstLine = "Nuestra"
         var secondLine = "Misión"
 
+        var text_en = "Make a deep transformation in organizations, developing capacities to achieve sustainable growth results, functioning as your catalysts for adaptive change and creating a new future."
+        var firstLine_en = "Our"
+        var secondLine_en = "Mission"
+
         var data = {
-            text: text,
-            firstLine: firstLine,
-            secondLine: secondLine
+            es: {
+                text: text,
+                firstLine: firstLine,
+                secondLine: secondLine
+            },
+            en: {
+                text: text_en,
+                firstLine: firstLine_en,
+                secondLine: secondLine_en
+            }
         }
 
-        document.getElementById('mission_1').innerHTML += navTemplate(data)
+        document.getElementById('approach_1').innerHTML += navTemplate(data['en'])
     </script>
 
-    <section class="mission_2">
-        <div class="container">
-            <div class="black">
-                <img src="img/blackMission.png" alt="">
-                <div class="text">
-                    <svg width="69" height="42" viewBox="0 0 69 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M47.9796 -1.83766e-06L45.8715 2.10421L63.1456 19.3467L-1.69134e-06 19.3467L-1.95203e-06 22.3287L63.4227 22.3287L45.8354 39.8958L47.9434 42L69 20.982L47.9796 -1.83766e-06Z" fill="#4538DA"/>
-                    </svg>
-                    <article class="description">
-                        <p>Creamos un equipo basado en</p>
-                        <p>diversidad, talento y experiencia.</p>
-                        <p>Los pilares fundamentales</p>
-                        <p>para conducir la transformación</p>
-                        <p>a través de la ejecución.</p>
-                    </article>
-                        
-                </div>
-            </div>
-            <div class="white">
-                <img src="img/whiteMission.png" alt="">
-                <div class="text">
-                    <svg width="69" height="42" viewBox="0 0 69 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M47.9796 -1.83766e-06L45.8715 2.10421L63.1456 19.3467L-1.69134e-06 19.3467L-1.95203e-06 22.3287L63.4227 22.3287L45.8354 39.8958L47.9434 42L69 20.982L47.9796 -1.83766e-06Z" fill="#4538DA"/>
-                    </svg>
-                    <article class="description">
-                        <p>Nuestro equipo cuenta</p>
-                        <p>con las personas adecuadas</p>
-                        <p>para desafiar el pensamiento</p>
-                        <p>establecido y liderar</p>
-                        <p>la transformación.</p>
-                    </article>
-                </div>
-            </div> 
-        </div>
-    </section>
+    <div id="mission"></div>
+
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates['mission'];
+        var black_text = "<p>Creamos un equipo basado en</p><p>diversidad, talento y experiencia.</p><p>Los pilares fundamentales</p><p>para conducir la transformación</p><p>a través de la ejecución.</p>"
+        var white_text = "<p>Nuestro equipo cuenta</p><p>con las personas adecuadas</p><p>para desafiar el pensamiento</p><p>establecido y liderar</p><p>la transformación.</p>"
+
+        var black_text_en = "<p>We create a team based on</p><p> diversity, talent and experience.</p><p>The fundamental keys</p><p>to drive transformation</p><p>through execution.</p>"
+        var white_text_en = "<p>Our team have </p><p>with the right people</p><p>to challenge established</p><p>thinking and lead</p><p>the transformation.</p>"
+
+        var data = {
+            es: {
+                black_text: black_text,
+                white_text: white_text
+            },
+            en: {
+                black_text: black_text_en,
+                white_text: white_text_en
+            }
+        }
+
+        document.getElementById('mission').innerHTML += navTemplate(data['en'])
+    </script>
+
     <footer id="form"></footer>
 
     <script type="text/javascript">
       var footerTemplate = Handlebars.templates["footer"];
 
-      document.getElementById("form").innerHTML += footerTemplate();
+      var data = {
+            es: {
+                text_1: '¿Construimos algo grande juntos?'
+            },
+            en: {
+                text_1: 'Do we build something big together? '
+            }
+        }
+
+        //var language = localStorage.getItem('lang')
+
+        document.getElementById('form').innerHTML += footerTemplate(data['es'])
     </script>
 
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>

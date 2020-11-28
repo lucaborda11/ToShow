@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/titleCase.css">
     <link rel="stylesheet" href="style/responsiveNav.css">
-    <title>Document</title>
+    <title>iVscular</title>
 </head>
 <body>
 
@@ -26,7 +26,25 @@
     <script type="text/javascript">
         var navTemplate = Handlebars.templates['nav'];
 
-        document.getElementById('nav').innerHTML += navTemplate()
+        data = {
+            es: {
+                home: 'Inicio',
+                mision: 'Mision',
+                approach: 'Enfoque',
+                team: 'Equipo',
+                cases: 'Proyectos'
+            },
+            en: {
+                home: 'Home',
+                mision: 'Mission',
+                approach: 'Approach',
+                team: 'Team',
+                cases: 'Cases'
+            }
+
+        }
+
+        document.getElementById('nav').innerHTML += navTemplate(data['es'])
     </script>
 
     <script type="text/javascript">
@@ -55,22 +73,35 @@
         texto_iv += "<p> A través de la calidad y soporte en evidencia clínica, está presente en 96 países, siendo así un referente en el mercado.</p> "
         texto_iv += "<p> WWC participa del liderazgo en Latino América, brindado soporte gerencial en todos y cada uno de los territorios de esta región. El principal foco de desarrollo es lograr un posicionamiento que brinde a los pacientes mejores, y más accesibles, tratamientos a sus enfermedades endovasculares, junto con un crecimiento sostenido y sustentable a la organización en todo LATAM.</p> "
         
+        var texto_es = ''
+
         var img_1 = '<img src="img/ivascularImg1.png" alt="" class="img1">'
         var img_2 = '<img src="img/ivascularImg2.png" alt="" class="img2">'
         var nextPro = 'IIvascular'
         var sectoPro = 'Salud'
+        var sectoProEn = 'Health'
         var logPro = '<img class="alto" src="img/logoCentury.png" alt="">'
 
         var data = {
-            texto: texto_iv,
-            img1: img_1,
-            img2: img_2,
-            nextProyect: nextPro,
-            sectorProyect: sectoPro,
-            logoProyect: logPro
+            es: {
+                texto: texto_iv,
+                img1: img_1,
+                img2: img_2,
+                nextProyect: nextPro,
+                sectorProyect: sectoPro,
+                logoProyect: logPro
+            },
+            en: {
+                texto: texto_en,
+                img1: img_1,
+                img2: img_2,
+                nextProyect: nextPro,
+                sectorProyect: sectoProEn,
+                logoProyect: logPro
+            }            
         }
 
-        document.getElementById('proyectIvascular').innerHTML += navTemplate(data)
+        document.getElementById('proyectIvascular').innerHTML += navTemplate(data['es'])
     </script>
 
     <footer id='form'></footer>
@@ -78,7 +109,18 @@
     <script type="text/javascript">
         var footerTemplate = Handlebars.templates['footer'];
 
-        document.getElementById('form').innerHTML += footerTemplate()
+        var data = {
+            es: {
+                text_1: '¿Construimos algo grande juntos?'
+            },
+            en: {
+                text_1: 'Do we build something big together? '
+            }
+        }
+
+        //var language = localStorage.getItem('lang')
+
+        document.getElementById('form').innerHTML += footerTemplate(data['es'])
     </script>
 
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>

@@ -2,17 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/case.css">
     <link rel="stylesheet" href="style/titleCase.css">
     <link rel="stylesheet" href="style/responsiveNav.css">
+    <link rel="stylesheet" href="style/nav.css">
     <link rel="stylesheet" href="style/fonts.css">
-    <title>Document</title>
+    <title>Century 21</title>
 </head>
 <body>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
+    ></script>
 
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
@@ -20,13 +23,31 @@
     <script type="text/javascript" src="js/responsiveNav.js"></script>
     <script type="text/javascript" src="js/titleCase.js"></script>
 
-    <header id="nav"></header>
     <div id="navResp" class="navResp"></div>
+    <header id="nav"></header>
 
     <script type="text/javascript">
-        var navTemplate = Handlebars.templates['nav'];
+        var navTemplate = Handlebars.templates["nav"];
+      
+        data = {
+            es: {
+                home: 'Inicio',
+                mision: 'Mision',
+                approach: 'Enfoque',
+                team: 'Equipo',
+                cases: 'Proyectos'
+            },
+            en: {
+                home: 'Home',
+                mision: 'Mission',
+                approach: 'Approach',
+                team: 'Team',
+                cases: 'Cases'
+            }
 
-        document.getElementById('nav').innerHTML += navTemplate()
+        }
+
+        document.getElementById('nav').innerHTML += navTemplate(data['es'])
     </script>
 
     <div id="title"></div>
@@ -58,22 +79,35 @@
         texto_iv += "10.000 oficinas y alrededor de 125.000 agentes en todo el mundo.</p>"
         texto_iv += "<p>WWC contribuye con C21 al desarrollo de proyectos y soluciones Inmobiliarias innovadoras, integrales y ajustadas a las necesidades de sus clientes, a través de un servicio de alta calidad y desarrollo de confianza, credibilidad y satisfacción por parte de nuestros asesores que nos permita consolidar relaciones de largo plazo.</p>"
         
+        var texto_en = '<p>WWC works in advising the American Century 21 real estate franchise. Like Health, we consider that housing is a basic need of all to be human and that is why it is in our interest. C21, founded in 1971, is the international network of real estate solutions with the most worldwide recognition that seeks to improve and change life of people in relation to their home. Experience, quality and service have allowed them to have a presence in 83 countries in 50 years, with more than 10,000 offices and around 125,000 agents worldwide.</p> <p>WWC contributes with C21 to the development of innovative, comprehensive and adjusted Real Estate projects and solutions to the needs of its clients, through a high quality service and the development of trust, credibility and satisfaction on the part of our advisors that allows us to consolidate relationships for the long term.</p>' 
+
         var img_1 = '<img src="img/centuryImg1.png" alt="" class="img1">'
         var img_2 = '<img src="img/centuryImg2.png" alt="" class="img2">'
         var nextPro = 'Century 21'
         var sectoPro = 'Salud'
+        var sectoProEn = 'Health'
         var logPro = '<img class="ancho" src="img/logoSalud.png" alt="">'
 
         var data = {
-            texto: texto_iv,
-            img1: img_1,
-            img2: img_2,
-            nextProyect: nextPro,
-            sectorProyect: sectoPro,
-            logoProyect: logPro
+            es: {
+                texto: texto_iv,
+                img1: img_1,
+                img2: img_2,
+                nextProyect: nextPro,
+                sectorProyect: sectoPro,
+                logoProyect: logPro
+            },
+            en: {
+                texto: texto_en,
+                img1: img_1,
+                img2: img_2,
+                nextProyect: nextPro,
+                sectorProyect: sectoProEn,
+                logoProyect: logPro
+            }            
         }
 
-        document.getElementById('proyectIvascular').innerHTML += navTemplate(data)
+        document.getElementById('proyectIvascular').innerHTML += navTemplate(data['es'])
     </script>
 
     <footer id='form'></footer>
@@ -81,7 +115,18 @@
     <script type="text/javascript">
         var footerTemplate = Handlebars.templates['footer'];
 
-        document.getElementById('form').innerHTML += footerTemplate()
+        var data = {
+            es: {
+                text_1: '¿Construimos algo grande juntos?'
+            },
+            en: {
+                text_1: 'Do we build something big together? '
+            }
+        }
+
+        //var language = localStorage.getItem('lang')
+
+        document.getElementById('form').innerHTML += footerTemplate(data['es'])
     </script>
 
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>

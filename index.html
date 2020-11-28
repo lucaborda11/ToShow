@@ -21,11 +21,30 @@
     <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
     <script type="text/javascript" src="js/responsiveNav.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
 
     <script type="text/javascript">
       var navTemplate = Handlebars.templates["nav"];
 
-      document.getElementById("nav").innerHTML += navTemplate();
+      data = {
+            es: {
+                home: 'Inicio',
+                mision: 'Mision',
+                approach: 'Enfoque',
+                team: 'Equipo',
+                cases: 'Proyectos'
+            },
+            en: {
+                home: 'Home',
+                mision: 'Mission',
+                approach: 'Approach',
+                team: 'Team',
+                cases: 'Cases'
+            }
+
+        }
+
+        document.getElementById('nav').innerHTML += navTemplate(data['es'])
     </script>
 
     <script type="text/javascript">
@@ -36,98 +55,82 @@
 
     <section class="home_0"></section>
 
-    <section class="home_1" id="home_1">
-      <footer class="index" id="index">
-        <div>
-          scroll
-        </div>
-        <div class="divider" id="divider"></div>
-        <div>
-          01
-        </div>
-      </footer>
-      <div class="container">
-        <h1 class="title" id="title">
-          <div class="default">
-            <span>La forma</span> <br />
-            <span>más rápida </span><br />
-            <span>de alcanzar</span> <br />
-            <span>el éxito.</span>
-          </div>
-          <div class="responsive">
-            <span>La forma</span>
-            <span>más rápida </span>
-            <span>de alcanzar</span>
-            <span>el éxito.</span>
-          </div>
-        </h1>
-      </div>
-      <div class="imagen">
-        <img src="img/background.png" alt="" />
-      </div>
-    </section>
-    <section class="home_2" id="home_2">
-      <footer class="index" id="index">
-        <div>
-          Workflow
-        </div>
-        <div class="divider" id="divider"></div>
-        <div>
-          02
-        </div>
-      </footer>
+    <div id="index"></div>
 
-      <div class="container">
-        <h1>
-          En un entorno de cambio exponencial,<br />
-          la adaptación es la llave .
-        </h1>
-        <h2>
-          El éxito es subjetivo, en cambio los resultados son concretos. <br />
-          los objetivos claros fijan “el norte” y guían a la organización <br />
-          a lograrlo .
-        </h2>
-        <div class="container_btn">
-          <div class="readme">
-            <div class="img">
-              <img src="img/mappingImg.png" alt="" />
-              <h4>Mapping</h4>
-              <p>
-                Realizamos un mapa de la situacion, <br />
-                identificando los problemas.
-              </p>
-            </div>
-          </div>
-          <div class="readme">
-            <div class="img">
-              <img src="img/estrategiaImg.png" alt="" />
-              <h4>Estrategy</h4>
-              <p>
-                Desarrollamos la estrategia para sortear <br />
-                las barreras y alcanzamos el objetivo.
-              </p>
-            </div>
-          </div>
-          <div class="readme">
-            <div class="img">
-              <img src="img/ejecucionImg.png" alt="" />
-              <h4>Execution</h4>
-              <p>
-                Diseñamos el plan junto a un equipo <br />
-                altamente capacitado y lo ejecutamos
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    <script type="text/javascript">
+      var navTemplate = Handlebars.templates["index"];
+
+      var title = '<span>La forma</span> <br /><span>más rápida </span><br /><span>de alcanzar</span> <br /><span>el éxito.</span>'
+      var title_res = '<span>La forma</span><span>más rápida </span><span>de alcanzar</span><span>el éxito.</span>'
+      var h1 = 'En un entorno de cambio exponencial,<br />la adaptación es la llave.'
+      var h2 = 'El éxito es subjetivo, en cambio los resultados son concretos. <br />los objetivos claros fijan “el norte” y guían a la organización <br />a lograrlo .'
+      var readme_1_h4 = 'Mapeo'
+      var readme_1_p = 'Realizamos un mapa de la situacion, <br />identificando los problemas.'
+      var readme_2_h4 = 'Estrategia'
+      var readme_2_p = 'Desarrollamos la estrategia para sortear <br />las barreras y alcanzamos el objetivo.'
+      var readme_3_h4 = 'Ejecución'
+      var readme_3_p = 'Diseñamos el plan junto a un equipo <br />altamente capacitado y lo ejecutamos'
+
+      var title_en = '<span>The fastest</span> <br /><span>way to </span><br /><span>success.</span>'
+      var title_res_en = '<span>The fastest</span><span>way to </span><span>success.</span>'
+      var h1_en = 'In an environment of exponential change, <br />adaptation is the key.'
+      var h2_en = 'Success is subjective, instead the results are concrete. <br />Clear objectives set "the north" and guide the organization<br />to achieve it.'
+      var readme_1_h4_en = 'Mapping'
+      var readme_1_p_en = 'We identify problems making a map <br />of the situation.'
+      var readme_2_h4_en = 'Strategy'
+      var readme_2_p_en = 'We develop the strategy to overcome the barriers <br />and achieve the objective.'
+      var readme_3_h4_en = 'Execution'
+      var readme_3_p_en = 'We design and execute the plan with a highly trained team.'
+
+
+      data = {
+            es: {
+              title: title,
+              title_res: title_res,
+              h1: h1,
+              h2: h2,
+              readme_1_h4: readme_1_h4,
+              readme_1_p: readme_1_p,
+              readme_2_h4: readme_2_h4,
+              readme_2_p: readme_2_p,
+              readme_3_h4: readme_3_h4,
+              readme_3_p: readme_3_p,
+            },
+            en: {
+              title: title_en,
+              title_res: title_res_en,
+              h1: h1_en,
+              h2: h2_en,
+              readme_1_h4: readme_1_h4_en,
+              readme_1_p: readme_1_p_en,
+              readme_2_h4: readme_2_h4_en,
+              readme_2_p: readme_2_p_en,
+              readme_3_h4: readme_3_h4_en,
+              readme_3_p: readme_3_p_en,
+            }
+
+        }
+
+        document.getElementById('index').innerHTML += navTemplate(data['es'])
+    </script>
 
     <footer id="form"></footer>
 
     <script type="text/javascript">
       var footerTemplate = Handlebars.templates["footer"];
 
-      document.getElementById("form").innerHTML += footerTemplate();
+      var data = {
+            es: {
+                text_1: '¿Construimos algo grande juntos?'
+            },
+            en: {
+                text_1: 'Do we build something big together? '
+            }
+        }
+
+        //var language = localStorage.getItem('lang')
+
+        document.getElementById('form').innerHTML += footerTemplate(data['es'])
     </script>
 
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>
