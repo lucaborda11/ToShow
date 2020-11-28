@@ -33,14 +33,24 @@
         var navTemplate = Handlebars.templates["responsiveNav"];
 
         data = {
-        home: 'Inicio',
-        mision: 'Mision',
-        approach: 'Enfoque',
-        team: 'Equipo',
-        cases: 'Proyectos'
-      }
+            es: {
+                home: 'Inicio',
+                mision: 'Mision',
+                approach: 'Enfoque',
+                team: 'Equipo',
+                cases: 'Proyectos'
+            },
+            en: {
+                home: 'Home',
+                mision: 'Mission',
+                approach: 'Approach',
+                team: 'Team',
+                cases: 'Cases'
+            }
 
-      document.getElementById('nav').innerHTML += navTemplate(data)
+        }
+
+        document.getElementById('nav').innerHTML += navTemplate(data['es'])
     </script>
 
     <div id="title"></div>
@@ -63,22 +73,35 @@
         texto_iv += "<p>Esta solución busca mantener a las personas en la salud a través de la reeducación y el cambio de hábitos con el objetivo de mejorar la calidad de vida y disminuir el riesgo de enfermedades cardiovasculares que pueden llevar a la muerte. Reducir los factores de riesgo cardíacos no es un tema de tratamientos farmacológicos sino de cambio de hábitos y conocimiento aplicado al día a día. Dietas, ejercicio, reducir el estrés y otros puntos clave de los cambios de conductas, requieren un proceso de aprendizaje y educación.</p>"
         texto_iv += "<p>Partiendo de la ciencia, desarrollamos una terapéutica digital que permite el monitoreo de poblaciones de riesgo y actuar a tiempo con programas a medida de cada individuo.<p/><p>Una de cada 3 personas morirán por causas cardiovasculares a nivel mundial y el rol de la educación puede reducir significativamente estas cifras.</p>"
         
+        var texto_es = '<p>As in the health area, Salud Prevent participates in the development of an education and digital therapy platform, which allows patients to patients learn to take care of themselves more and better.</p> <p>This solution seeks to keep people in health through reeducation and change of habits with the aim of improving the quality of life and decrease the risk of cardiovascular diseases that can lead to death. Reducing cardiac risk factors is not a matter of pharmacological treatments but of changing habits and knowledge applied to the day to day. Diets, exercise, reduce stress and other points key to behavioral changes require a process of learning and education.</p> <p>Starting from science, we develop a digital therapy that allows monitoring populations at risk and acting on time with programs tailored to each individual.</p> <p>One in 3 people will die of cardiovascular causes worldwide and the role of education can significantly reduce these figures.</p>'
+
         var img_1 = '<img src="img/saludImg1.png" alt="" class="img1">'
         var img_2 = '<img src="img/saludImg2.png" alt="" class="img2">'
         var nextPro = 'Salud Prevent'
         var sectoPro = 'Salud'
+        var sectoProEn = 'Health'
         var logPro = '<img class="ancho" src="img/ivascularLogo.png" alt="">'
 
         var data = {
-            texto: texto_iv,
-            img1: img_1,
-            img2: img_2,
-            nextProyect: nextPro,
-            sectorProyect: sectoPro,
-            logoProyect: logPro
+            es: {
+                texto: texto_iv,
+                img1: img_1,
+                img2: img_2,
+                nextProyect: nextPro,
+                sectorProyect: sectoPro,
+                logoProyect: logPro
+            },
+            en: {
+                texto: texto_en,
+                img1: img_1,
+                img2: img_2,
+                nextProyect: nextPro,
+                sectorProyect: sectoProEn,
+                logoProyect: logPro
+            }            
         }
 
-        document.getElementById('proyectIvascular').innerHTML += navTemplate(data)
+        document.getElementById('proyectIvascular').innerHTML += navTemplate(data['es'])
     </script>
 
     <footer id='form'></footer>
@@ -86,11 +109,18 @@
     <script type="text/javascript">
         var footerTemplate = Handlebars.templates['footer'];
 
-        data = {
-            text_1: '¿Construimos algo grande juntos?'
+        var data = {
+            es: {
+                text_1: '¿Construimos algo grande juntos?'
+            },
+            en: {
+                text_1: 'Do we build something big together? '
+            }
         }
 
-        document.getElementById('form').innerHTML += footerTemplate(data)
+        //var language = localStorage.getItem('lang')
+
+        document.getElementById('form').innerHTML += footerTemplate(data['es'])
     </script>
 
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>

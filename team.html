@@ -21,22 +21,32 @@
     <script type="text/javascript" src="js/title.js"></script>
     <script type="text/javascript" src="js/person.js"></script>
     <script type="text/javascript" src="js/responsiveNav.js"></script>
+    <script type="text/javascript" src="js/team.js"></script>
 
     <header id="nav"></header>
     <div id="navResp" class="navResp"></div>
 
     <script type="text/javascript">
-        var navTemplate = Handlebars.templates['nav'];
+      var navTemplate = Handlebars.templates['nav'];
 
       data = {
-        home: 'Inicio',
-        mision: 'Mision',
-        approach: 'Enfoque',
-        team: 'Equipo',
-        cases: 'Proyectos'
+        es: {
+          home: 'Inicio',
+          mision: 'Mision',
+          approach: 'Enfoque',
+          team: 'Equipo',
+          cases: 'Proyectos'
+        },
+        en: {
+          home: 'Home',
+          mision: 'Mission',
+          approach: 'Approach',
+          team: 'Team',
+          cases: 'Cases'
+        }
       }
 
-      document.getElementById('nav').innerHTML += navTemplate(data)
+      document.getElementById('nav').innerHTML += navTemplate(data['es'])
     </script>
 
     <script type="text/javascript">
@@ -55,13 +65,24 @@
         var firstLine = "Nuestro"
         var secondLine = "Lider"
 
+        var text_en = "Health, innovation, team development and the creation of solutions based on strategic alliances, is his area of ​​work in the last three decades. Through management, leadership and execution along with knowledge, experience and openness in the search for systemic and comprehensive solutions."
+        var firstLine_en = "Our"
+        var secondLine_en = "Leader"
+
         var data = {
-            text: text,
-            firstLine: firstLine,
-            secondLine: secondLine
+            es: {
+                text: text,
+                firstLine: firstLine,
+                secondLine: secondLine
+            },
+            en: {
+                text: text_en,
+                firstLine: firstLine_en,
+                secondLine: secondLine_en
+            }
         }
 
-        document.getElementById('title_0').innerHTML += navTemplate(data)
+        document.getElementById('approach_1').innerHTML += navTemplate(data['en'])
     </script>
 
     <div class="background">
@@ -92,23 +113,30 @@
         </script>
 
       </div>
-      <div class="teamText">
-        <article>
-          Walter González desarrolló su carrera en posiciones de liderazgo en Corporaciones Europeas y Americanas del área farmacéutica y de dispositivos médicos, que sumados a su esencia de entrepreneur, facilitan el proceso de conformación de equipos de alta performance con foco en el cliente.
-        </article>
-        <div class="divider"></div>
-        <p>ALDP Program Boston Scientific.</p>
-        <br>
-        <br>
-        <article>
-          La oportunidad de trabajar en los países más grandes de Latino América, le ha permitidó construir un capital humano y desarrollo de red de personas con perfil de liderazgo en cada territorio de esta región tan diversa. 
-          Su foco ha sido la construcción de nuevos modelos de negocio,  brindando soluciones de acceso y prevención en la Salud y Proyectos habitacionales en toda la región
-          WWC tiene como fin último, colaborar con las organizaciones en el desafiante proceso de la innovación y su transformación que le permitan  capitalizar nuevas oportunidades
-        </article>
-        <img src="img/teamImg.png" alt="">
-        <p>Mike Mahoney | CEO de Boston Scientific</p>
-        <p>Ortíz | Presidente Latam de Boston Scientific</p>
-      </div>      
+
+      <div id="teamContent"></div>
+
+      <script type="text/javascript">
+        var navTemplate = Handlebars.templates['team'];
+        var team_text_1 = "Walter González desarrolló su carrera en posiciones de liderazgo en Corporaciones Europeas y Americanas del área farmacéutica y de dispositivos médicos, que sumados a su esencia de entrepreneur, facilitan el proceso de conformación de equipos de alta performance con foco en el cliente."
+        var team_text_2 = "La oportunidad de trabajar en los países más grandes de Latino América, le ha permitidó construir un capital humano y desarrollo de red de personas con perfil de liderazgo en cada territorio de esta región tan diversa. Su foco ha sido la construcción de nuevos modelos de negocio,  brindando soluciones de acceso y prevención en la Salud y Proyectos habitacionales en toda la región WWC tiene como fin último, colaborar con las organizaciones en el desafiante proceso de la innovación y su transformación que le permitan  capitalizar nuevas oportunidades"
+
+        var team_text_1_en = "Walter González developed his career in leadership positions in European and American Corporations in the pharmaceutical and medical devices area, which added to his essence as an entrepreneur, facilitating the process of creating high-performance teams with a focus on the client."
+        var team_text_2_en = "The opportunity to work in the largest countries of Latin America has allowed him to build human capital and develop a network of people with a leadership profile in each territory of this diverse region. Its focus has been the construction of new business models, providing access and prevention solutions in Health and Housing Projects throughout the region WWC's ultimate goal is to collaborate with organizations in the challenging process of innovation and transformation that allow them to capitalize on new opportunities"
+
+        var data = {
+            es: {
+              team_text_1: team_text_1,
+              team_text_2: team_text_2,
+            },
+            en: {
+              team_text_1: team_text_1_en,
+              team_text_2: team_text_2_en,
+            }
+        }
+
+        document.getElementById('teamContent').innerHTML += navTemplate(data['en'])
+      </script>        
     </section>
 
     <section class="approach_1" id="title_1"></section>
@@ -119,13 +147,24 @@
         var firstLine = "Nuestro"
         var secondLine = "Equipo"
 
+        var text_en = "People are the factor of success. A team with experience, knowledge and diversity of training is our value proposition. We catalyze processes and leverage results by minimizing errors, and thus achieve profitable and sustainable growth. Synergy is our ultimate goal and this can only be achieved with a positive attitude in an organizational environment of trust and transparency."
+        var firstLine_en = "Our"
+        var secondLine_en = "Team"
+
         var data = {
-            text: text,
-            firstLine: firstLine,
-            secondLine: secondLine
+            es: {
+                text: text,
+                firstLine: firstLine,
+                secondLine: secondLine
+            },
+            en: {
+                text: text_en,
+                firstLine: firstLine_en,
+                secondLine: secondLine_en
+            }
         }
 
-        document.getElementById('title_1').innerHTML += navTemplate(data)
+        document.getElementById('title_1').innerHTML += navTemplate(data['en'])
     </script>
 
     <section class="teamPersons">
@@ -139,15 +178,26 @@
         var text = 'Mediante la guía del pensamiento creativo, busco el masterblend entre publicidad, arte e innovación. '
         var redes = '<a>LinkedIn</a><a>Instagram</a>'
 
+        var text_en = 'Through the guidance of creative thinking, I seek the masterblend between advertising, art and innovation.'
+
         var data = {
-          img: img,
-          position: position,
-          personName: personName,
-          description: text,
-          redes: redes
+          es: {
+            img: img,
+            position: position,
+            personName: personName,
+            description: text,
+            redes: redes
+          },
+          en: {
+            img: img,
+            position: position,
+            personName: personName,
+            description: text_en,
+            redes: redes
+          }
         }
 
-        document.getElementById('person1').innerHTML += navTemplate(data)
+        document.getElementById('person1').innerHTML += navTemplate(data['es'])
       </script>
 
       <script type="text/javascript">
@@ -158,15 +208,26 @@
           var text = 'Especialista en estrategias de inbound marketing para generar relaciones duraderas con los clientes.'
           var redes = '<a>LinkedIn</a>'
 
+          var text_en = 'Specialist in inbound marketing strategies to generate lasting relationships with clients.'
+
           var data = {
-            img: img,
-            position: position,
-            personName: personName,
-            description: text,
-            redes: redes
+            es: {
+              img: img,
+              position: position,
+              personName: personName,
+              description: text,
+              redes: redes
+            },
+            en: {
+              img: img,
+              position: position,
+              personName: personName,
+              description: text_en,
+              redes: redes
+            }
           }
 
-          document.getElementById('person2').innerHTML += navTemplate(data)
+          document.getElementById('person2').innerHTML += navTemplate(data['es'])
       </script>
     </section>
 
@@ -176,11 +237,18 @@
     <script type="text/javascript">
       var footerTemplate = Handlebars.templates["footer"];
 
-      data = {
-        text_1: '¿Construimos algo grande juntos?'
-      }
+      var data = {
+          es: {
+            text_1: '¿Construimos algo grande juntos?'
+          },
+          en: {
+            text_1: 'Do we build something big together? '
+          }
+        }
 
-      document.getElementById('form').innerHTML += footerTemplate(data)
+        //var language = localStorage.getItem('lang')
+
+        document.getElementById('form').innerHTML += footerTemplate(data['es'])
     </script>
     
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>

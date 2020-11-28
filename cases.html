@@ -26,20 +26,31 @@
     <script type="text/javascript" src="js/titleCase.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
     <script type="text/javascript" src="js/responsiveNav.js"></script>
+    <script type="text/javascript" src="js/cases.js"></script>
 
 
     <script type="text/javascript">
       var navTemplate = Handlebars.templates["nav"];
 
-        var data = {
-            home: 'Inicio',
-            mision: 'Mision',
-            approach: 'Enfoque',
-            team: 'Equipo',
-            cases: 'Proyectos'
+      data = {
+            es: {
+                home: 'Inicio',
+                mision: 'Mision',
+                approach: 'Enfoque',
+                team: 'Equipo',
+                cases: 'Proyectos'
+            },
+            en: {
+                home: 'Home',
+                mision: 'Mission',
+                approach: 'Approach',
+                team: 'Team',
+                cases: 'Cases'
+            }
+
         }
 
-        document.getElementById('nav').innerHTML += navTemplate(data)
+        document.getElementById('nav').innerHTML += navTemplate(data['es'])
     </script>
 
     <script type="text/javascript">
@@ -48,139 +59,82 @@
         document.getElementById("navResp").innerHTML += navTemplate();
     </script>
 
-    <section class="home_0"></section>
+    <div id="casesContetn"></div>    
 
-    <div class="containerFlow">
-        <h1>
-            Nos especializamos en tres pilares,<br>
-            claves para el desarrollo del ser humano
-        </h1>
-        <div class="container_btn">
-          <div class="readme">
-            <div class="img">
-              <img src="img/caseFlow1.png" alt="" />
-              <h4>Salud</h4>
-              <p>
-                Crear soluciones integrales<br>
-                con foco en la prevención y en el<br>
-                acceso de los pacientes<br>
-                a tratamientos de alta complejidad 
-              </p>
-            </div>
-          </div>
-          <div class="readme">
-            <div class="img">
-              <img src="img/caseFlow2.png" alt="" />
-              <h4>Vivienda</h4>
-              <p>
-                Desarrollo de red de asesores<br>
-                y proyectos inmobiliarios,<br>
-                que faciliten satisfacer las necesidades<br>
-                habitacionales de nuestros clientes
-              </p>
-            </div>
-          </div>
-          <div class="readme">
-            <div class="img">
-              <img src="img/caseFlow3.png" alt="" />
-              <h4>Educación</h4>
-              <p>
-                Utilizar la tecnología digital y de<br>
-                comunicación actual, para el<br> 
-                desarrollo de herramientas que<br> 
-                permitan educar a poblaciones con<br> 
-                el objetivo de mejorar su salud
-              </p>
-            </div>
-          </div>
-        </div>
-    </div>
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates["cases"];
 
-    <section class="container" >
-        <div class="case">
-            <div class="caseImg">
-                <img src="img/ivascularLogo.png" class="ivascular" alt="">
-                <div class="subtext">
-                    <h4>
-                        iVascular
-                    </h4>
-                    <svg width="68" height="42" viewBox="0 0 68 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M47.2842 0L45.2067 2.10421L62.2304 19.3467H0V22.3287H62.5035L45.1711 39.8958L47.2486 42L68 20.982L47.2842 0Z" fill="black"/>
-                    </svg>    
-                </div>
-            </div>
-            <div class="caseText">
-                <h3>Ivascular</h3>
-                <article>Empresa líder en dispositivos médicos e innovación de origen europeo, con foco en la creación de soluciones terapéuticas de enfermedades Cardiovasculares y Neurovasculares.</article>
-                <div class="more" >
-                    <a href="ivascular.html">Leer más</a>
-                    <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.9468 0L21.9385 1.002L30.2001 9.21271H0V10.6327H30.3326L21.9213 18.998L22.9295 20L33 9.99141L22.9468 0Z" fill="#4538DA"/>
-                    </svg>                    
-                </div>
-            </div>
-        </div>
-        <div class="case caseReverse">
-            <div class="caseText" >
-                <h3>Century 21</h3>
-                <article>WWC contribuye con C21 al desarrollo de proyectos y soluciones inmobiliarias innovadoras, integrales y ajustadas a las necesidades de sus clientes.</article>
-                <div class="more">
-                    <a href="century.html">Leer más</a>
-                    <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.9468 0L21.9385 1.002L30.2001 9.21271H0V10.6327H30.3326L21.9213 18.998L22.9295 20L33 9.99141L22.9468 0Z" fill="#4538DA"/>
-                    </svg>  
-                </div>
-            </div>
-            <div class="caseImg" >
-                <img src="img/logoCentury.png" class="century" alt="">
-                <div class="subtext">
-                    <h4>
-                        Century 21
-                    </h4>
-                    <svg width="68" height="42" viewBox="0 0 68 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M47.2842 0L45.2067 2.10421L62.2304 19.3467H0V22.3287H62.5035L45.1711 39.8958L47.2486 42L68 20.982L47.2842 0Z" fill="black"/>
-                    </svg>    
-                </div>
-            </div>
-        </div>
-        <div class="case">
-            <div class="caseImg">
-                <img src="img/logoSalud.png" class="saludPrevent" alt="">
-                <div class="subtext">
-                    <h4>
-                        Salud Prevent
-                    </h4>
-                    <svg width="68" height="42" viewBox="0 0 68 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M47.2842 0L45.2067 2.10421L62.2304 19.3467H0V22.3287H62.5035L45.1711 39.8958L47.2486 42L68 20.982L47.2842 0Z" fill="black"/>
-                    </svg>    
-                </div>
-            </div>
-            <div class="caseText">
-                <h3>Salud Prevent</h3>
-                <article>Contribuye a reducir complicaciones cardiológicas graves en pacientes de riesgo, a través de la educación y mejora de sus hábitos y conductas, actuando en la prevención. De igual manera brinda acceso a procedimientos de alta complejidad, creando alternativas de cobertura en instituciones de primer nivel como el ICBA.</article>
-                <div class="more" >
-                    <a href="saludPrevent.html">Leer más</a>
-                    <div>
-                        
-                    </div>
-                    <svg width="33" height="20" viewBox="0 0 33 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M22.9468 0L21.9385 1.002L30.2001 9.21271H0V10.6327H30.3326L21.9213 18.998L22.9295 20L33 9.99141L22.9468 0Z" fill="#4538DA"/>
-                    </svg>  
-                </div>
-            </div>
-        </div>
-    </section>
+        var title = 'Nos especializamos en tres pilares,<br>claves para el desarrollo del ser humano'
+        var readme_1_h4 = 'Salud'
+        var readme_1_p = 'Crear soluciones integrales<br>con foco en la prevención y en el<br>acceso de los pacientes<br>a tratamientos de alta complejidad '
+        var readme_2_h4 = 'Vivienda'
+        var readme_2_p = 'Desarrollo de red de asesores<br>y proyectos inmobiliarios,<br>que faciliten satisfacer las necesidades<br>habitacionales de nuestros clientes'
+        var readme_3_h4 = 'Educación'
+        var readme_3_p = 'Utilizar la tecnología digital y de<br>comunicación actual, para el<br>desarrollo de herramientas que<br>permitan educar a poblaciones con<br>el objetivo de mejorar su salud'
+        var case_1 = 'Empresa líder en dispositivos médicos e innovación de origen europeo, con foco en la creación de soluciones terapéuticas de enfermedades Cardiovasculares y Neurovasculares.'
+        var case_2 = 'WWC contribuye con C21 al desarrollo de proyectos y soluciones inmobiliarias innovadoras, integrales y ajustadas a las necesidades de sus clientes.'
+        var case_3 = 'Contribuye a reducir complicaciones cardiológicas graves en pacientes de riesgo, a través de la educación y mejora de sus hábitos y conductas, actuando en la prevención. De igual manera brinda acceso a procedimientos de alta complejidad, creando alternativas de cobertura en instituciones de primer nivel como el ICBA.'
+
+        var title_en = 'We specialize in three pillars,keys to human development.'
+        var readme_1_h4_en = 'Health'
+        var readme_1_p_en = 'Create integral solutions focused on prevention and patient access<br>to highly complex treatments.'
+        var readme_2_h4_en = 'Housing'
+        var readme_2_p_en = 'Development of a network of advisers<br> and real estate projects,<br> that facilitate satisfying the housing needs of our clients.'
+        var readme_3_h4_en = 'Education'
+        var readme_3_p_en = 'Use current digital and communication<br> technology to develop tools to educate<br> populations with the aim of improving their health.'
+        var case_1_en = 'Leading company in medical devices and innovation of European origin, focused on the creation of therapeutic solutions for Cardiovascular and Neurovascular diseases.'
+        var case_2_en = 'WWC contributes with C21 to the development of innovative, comprehensive projects and real estate solutions tailored to the needs of its clients.'
+        var case_3_en = 'It contributes to reducing serious cardiological complications in patients at risk, through education and improvement of their habits and behaviors, acting in prevention. Likewise, it provides access to highly complex procedures, creating coverage alternatives in top-level institutions such as the ICBA.'
+
+
+        data = {
+            es: {
+                title: title,
+                readme_1_h4: readme_1_h4,
+                readme_1_p: readme_1_p,
+                readme_2_h4: readme_2_h4,
+                readme_2_p: readme_2_p,
+                readme_3_h4: readme_3_h4,
+                readme_3_p: readme_3_p,
+                case_1: case_1,
+                case_2: case_2,
+                case_3: case_3
+            },
+            en: {
+                title: title_en,
+                readme_1_h4: readme_1_h4_en,
+                readme_1_p: readme_1_p_en,
+                readme_2_h4: readme_2_h4_en,
+                readme_2_p: readme_2_p_en,
+                readme_3_h4: readme_3_h4_en,
+                readme_3_p: readme_3_p_en,
+                case_1: case_1_en,
+                case_2: case_2_en,
+                case_3: case_3_en
+            }
+
+        }
+
+        document.getElementById('casesContetn').innerHTML += navTemplate(data['es'])
+    </script>
 
     <footer id="form"></footer>
 
     <script type="text/javascript">
       var footerTemplate = Handlebars.templates["footer"];
 
-        var data = {
-            text_1: '¿Construimos algo grande juntos?'
+      var data = {
+            es: {
+                text_1: '¿Construimos algo grande juntos?'
+            },
+            en: {
+                text_1: 'Do we build something big together? '
+            }
         }
 
-        document.getElementById('form').innerHTML += footerTemplate(data)
+        //var language = localStorage.getItem('lang')
+
+        document.getElementById('form').innerHTML += footerTemplate(data['es'])
     </script>
 
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>
