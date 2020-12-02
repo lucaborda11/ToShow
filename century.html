@@ -2,33 +2,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/case.css">
     <link rel="stylesheet" href="style/titleCase.css">
     <link rel="stylesheet" href="style/responsiveNav.css">
     <link rel="stylesheet" href="style/nav.css">
-    <link rel="stylesheet" href="style/fonts.css">
+    <script src="js/language.js"></script>
+
     <title>Century 21</title>
 </head>
-<body>
+<body onload="setLanguage()">
 
     <script
       type="text/javascript"
       src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"
     ></script>
 
-    <script type="text/javascript" src="js/nav.js"></script>
-    <script type="text/javascript" src="js/footer.js"></script>
     <script type="text/javascript" src="js/case.js"></script>
     <script type="text/javascript" src="js/responsiveNav.js"></script>
     <script type="text/javascript" src="js/titleCase.js"></script>
+    <script type="text/javascript" src="js/footer.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
 
     <div id="navResp" class="navResp"></div>
     <header id="nav"></header>
 
     <script type="text/javascript">
         var navTemplate = Handlebars.templates["nav"];
-      
+  
+        data = {
+              es: {
+                  home: 'Inicio',
+                  mision: 'Mision',
+                  approach: 'Enfoque',
+                  team: 'Equipo',
+                  cases: 'Proyectos'
+              },
+              en: {
+                  home: 'Home',
+                  mision: 'Mission',
+                  approach: 'Approach',
+                  team: 'Team',
+                  cases: 'Cases'
+              }
+  
+          }
+          var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+  
+          document.getElementById('nav').innerHTML += navTemplate(data[language])
+  
+          document.getElementById('language').value = language
+      </script>
+
+    <div id="title"></div>
+
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates["responsiveNav"];
+
         data = {
             es: {
                 home: 'Inicio',
@@ -47,15 +78,10 @@
 
         }
 
-        document.getElementById('nav').innerHTML += navTemplate(data['es'])
-    </script>
+        var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
 
-    <div id="title"></div>
 
-    <script type="text/javascript">
-        var navTemplate = Handlebars.templates["responsiveNav"];
-
-        document.getElementById("navResp").innerHTML += navTemplate();
+        document.getElementById('navResp').innerHTML += navTemplate(data[language])
     </script>
 
     <script type="text/javascript">
@@ -88,6 +114,13 @@
         var sectoProEn = 'Health'
         var logPro = '<img class="ancho" src="img/logoSalud.png" alt="">'
 
+        var cliente = 'Cliente'
+        var sector = 'Sector'
+        var cliente_en = 'Client'
+
+        var path ='saludPrevent.html'
+
+
         var data = {
             es: {
                 texto: texto_iv,
@@ -95,7 +128,10 @@
                 img2: img_2,
                 nextProyect: nextPro,
                 sectorProyect: sectoPro,
-                logoProyect: logPro
+                logoProyect: logPro,
+                cliente: cliente,
+                sector: sector,
+                path: path
             },
             en: {
                 texto: texto_en,
@@ -103,31 +139,42 @@
                 img2: img_2,
                 nextProyect: nextPro,
                 sectorProyect: sectoProEn,
-                logoProyect: logPro
+                logoProyect: logPro,
+                cliente: cliente_en,
+                sector: sector,
+                path: path
             }            
         }
 
-        document.getElementById('proyectIvascular').innerHTML += navTemplate(data['es'])
+        var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+        document.getElementById('proyectIvascular').innerHTML += navTemplate(data[language])
     </script>
 
     <footer id='form'></footer>
 
     <script type="text/javascript">
-        var footerTemplate = Handlebars.templates['footer'];
-
+        var footerTemplate = Handlebars.templates["footer"];
+  
         var data = {
-            es: {
-                text_1: '¿Construimos algo grande juntos?'
-            },
-            en: {
-                text_1: 'Do we build something big together? '
-            }
-        }
-
-        //var language = localStorage.getItem('lang')
-
-        document.getElementById('form').innerHTML += footerTemplate(data['es'])
-    </script>
+              es: {
+                  text_1: '¿Construimos algo grande juntos?',
+                  name: 'Nombre y Apellido',
+                  mail: 'Correo Electronico',
+                  mensaje: 'Mensaje'
+              },
+              en: {
+                  text_1: 'Do we build something big together? ',
+                  name: 'Full Name',
+                  mail: 'E-Mail',
+                  mensaje: 'Message'
+              }
+          }
+  
+          var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+  
+          document.getElementById('form').innerHTML += footerTemplate(data[language])
+      </script>
 
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>
 </body>

@@ -53,6 +53,10 @@ header .redes_container .redes a{
     color: black;
 }
 
+header .redes_container .redes a:hover{
+    cursor: pointer;
+}
+
 header .redes_container .redes select{
     color: black;
     background-color: white;

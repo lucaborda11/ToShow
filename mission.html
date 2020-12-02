@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style/responsiveNav.css">
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/mission.css">
+    <script src="js/language.js"></script>
+
     <title>Mission</title>
 </head>
 <body>
@@ -20,15 +22,43 @@
     ></script>
 
     <script type="text/javascript" src="js/title.js"></script>
-    <script type="text/javascript" src="js/nav.js"></script>
     <script type="text/javascript" src="js/footer.js"></script>
     <script type="text/javascript" src="js/responsiveNav.js"></script>
     <script type="text/javascript" src="js/mission.js"></script>
+    <script type="text/javascript" src="js/nav.js"></script>
 
     <script type="text/javascript">
-      var navTemplate = Handlebars.templates["nav"];
+        var navTemplate = Handlebars.templates["nav"];
+  
+        data = {
+              es: {
+                  home: 'Inicio',
+                  mision: 'Mision',
+                  approach: 'Enfoque',
+                  team: 'Equipo',
+                  cases: 'Proyectos'
+              },
+              en: {
+                  home: 'Home',
+                  mision: 'Mission',
+                  approach: 'Approach',
+                  team: 'Team',
+                  cases: 'Cases'
+              }
+  
+        }
+  
+        var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+  
+        document.getElementById('nav').innerHTML += navTemplate(data[language])
+  
+        document.getElementById('language').value = language
+    </script>
 
-      data = {
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates["responsiveNav"];
+
+        data = {
             es: {
                 home: 'Inicio',
                 mision: 'Mision',
@@ -46,13 +76,10 @@
 
         }
 
-        document.getElementById('nav').innerHTML += navTemplate(data['es'])
-    </script>
+        var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
 
-    <script type="text/javascript">
-        var navTemplate = Handlebars.templates["responsiveNav"];
 
-        document.getElementById("navResp").innerHTML += navTemplate();
+        document.getElementById('navResp').innerHTML += navTemplate(data[language])
     </script>
 
     <section class="home_0"></section>
@@ -82,7 +109,10 @@
             }
         }
 
-        document.getElementById('approach_1').innerHTML += navTemplate(data['en'])
+        var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+
+        document.getElementById('approach_1').innerHTML += navTemplate(data[language])
     </script>
 
     <div id="mission"></div>
@@ -106,27 +136,36 @@
             }
         }
 
-        document.getElementById('mission').innerHTML += navTemplate(data['en'])
+        var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+
+        document.getElementById('mission').innerHTML += navTemplate(data[language])
     </script>
 
     <footer id="form"></footer>
 
     <script type="text/javascript">
-      var footerTemplate = Handlebars.templates["footer"];
-
-      var data = {
-            es: {
-                text_1: '¿Construimos algo grande juntos?'
-            },
-            en: {
-                text_1: 'Do we build something big together? '
-            }
-        }
-
-        //var language = localStorage.getItem('lang')
-
-        document.getElementById('form').innerHTML += footerTemplate(data['es'])
-    </script>
+        var footerTemplate = Handlebars.templates["footer"];
+  
+        var data = {
+              es: {
+                  text_1: '¿Construimos algo grande juntos?',
+                  name: 'Nombre y Apellido',
+                  mail: 'Correo Electronico',
+                  mensaje: 'Mensaje'
+              },
+              en: {
+                  text_1: 'Do we build something big together? ',
+                  name: 'Full Name',
+                  mail: 'E-Mail',
+                  mensaje: 'Message'
+              }
+          }
+  
+          var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+  
+          document.getElementById('form').innerHTML += footerTemplate(data[language])
+      </script>
 
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>
 </body>
