@@ -204,6 +204,10 @@ body {
   background-color: white;
 }
 
+.home_2 .container .container_btn .readme .img img{
+  height: 115px;
+}
+
 .home_2 .container .container_btn .readme .img svg {
   background-color: #ffffff;
 }
