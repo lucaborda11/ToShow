@@ -49,8 +49,8 @@ section {
     max-width: 60%;
     font-size: 1.1rem;
     line-height: 2rem;
-    font-weight: 400;
-    padding-top: 6rem;
+    font-weight: 300;
+    padding-top: 6.7rem;
 }
 
 @media screen and (max-width: 765px) {

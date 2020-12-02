@@ -27,8 +27,7 @@ header .redes_container {
 }
 
 header .redes_container img {
-    background-color: white;
-    margin-left: 1.6rem;
+    background-color: white; 
 }
 
 header .redes_container div{
@@ -50,6 +49,7 @@ header .redes_container .redes {
 
 header .redes_container .redes a{
     background-color: white;
+    text-decoration: none;
     color: black;
 }
 
@@ -112,9 +112,16 @@ header .redes_container .redes select::-ms-expand {
 .subtitle{
     background-color: black;
     color: white;
-    text-align: center;
+    text-align: left;
     font-weight: 300;
     font-size: 1.2rem;
+}
+
+.subtitle a{
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-decoration: none;
 }
 
 .bold {

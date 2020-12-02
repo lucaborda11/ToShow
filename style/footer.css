@@ -66,6 +66,7 @@
 }
 .footer .formulario textarea{
     outline: none;
+    border: 1px solid grey;
     background-color: #f6f6f6;
     border-radius: 2rem;
     width:60%;
