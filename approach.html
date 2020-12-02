@@ -8,10 +8,11 @@
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/enfoque.css">
     <link rel="stylesheet" href="style/responsiveNav.css">
+    <script src="js/language.js"></script>
 
     <title>Approach</title>
 </head>
-<body>
+<body onload="setLanguage()">
 
     <div id="navResp" class="navResp"></div>
     <header id="nav"></header>
@@ -44,16 +45,40 @@
             }
 
         }
+        var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
 
-        document.getElementById('nav').innerHTML += navTemplate(data['en'])
+        document.getElementById('nav').innerHTML += navTemplate(data[language])
+
+        document.getElementById('language').value = language
     </script>
 
 
-    <script type="text/javascript">
-        var navTemplate = Handlebars.templates["responsiveNav"];
+<script type="text/javascript">
+    var navTemplate = Handlebars.templates["responsiveNav"];
 
-        document.getElementById("navResp").innerHTML += navTemplate();
-    </script>
+    data = {
+        es: {
+            home: 'Inicio',
+            mision: 'Mision',
+            approach: 'Enfoque',
+            team: 'Equipo',
+            cases: 'Proyectos'
+        },
+        en: {
+            home: 'Home',
+            mision: 'Mission',
+            approach: 'Approach',
+            team: 'Team',
+            cases: 'Cases'
+        }
+
+    }
+
+    var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+
+    document.getElementById('navResp').innerHTML += navTemplate(data[language])
+</script>
 
     <div class="home_0"></div>
 
@@ -83,7 +108,9 @@
             }
         }
 
-        document.getElementById('approach_1').innerHTML += navTemplate(data['en'])
+        var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+        document.getElementById('approach_1').innerHTML += navTemplate(data[language])
     </script>
 
     <section class="pasos">
@@ -117,7 +144,10 @@
                 }
             }
 
-            document.getElementById('paso1').innerHTML += navTemplate(data['en'])
+            var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+
+            document.getElementById('paso1').innerHTML += navTemplate(data[language])
         </script>
 
         <script type="text/javascript">
@@ -145,7 +175,10 @@
                 }
             }
 
-            document.getElementById('paso2').innerHTML += navTemplate(data['en'])
+            var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+
+            document.getElementById('paso2').innerHTML += navTemplate(data[language])
         </script>
 
         <script type="text/javascript">
@@ -173,7 +206,10 @@
                 }
             }
 
-            document.getElementById('paso3').innerHTML += navTemplate(data['es'])
+            var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+
+            document.getElementById('paso3').innerHTML += navTemplate(data[language])
         </script>
         
     </section>
@@ -181,21 +217,27 @@
     <footer id='form'></footer>
 
     <script type="text/javascript">
-        var footerTemplate = Handlebars.templates['footer'];
-
+        var footerTemplate = Handlebars.templates["footer"];
+  
         var data = {
-            es: {
-                text_1: '¿Construimos algo grande juntos?'
-            },
-            en: {
-                text_1: 'Do we build something big together? '
-            }
-        }
-
-        //var language = localStorage.getItem('lang')
-
-        document.getElementById('form').innerHTML += footerTemplate(data['en'])
-    </script>
+              es: {
+                  text_1: '¿Construimos algo grande juntos?',
+                  name: 'Nombre y Apellido',
+                  mail: 'Correo Electronico',
+                  mensaje: 'Mensaje'
+              },
+              en: {
+                  text_1: 'Do we build something big together? ',
+                  name: 'Full Name',
+                  mail: 'E-Mail',
+                  mensaje: 'Message'
+              }
+          }
+  
+          var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+  
+          document.getElementById('form').innerHTML += footerTemplate(data[language])
+      </script>
     
     <script type="text/javascript" src="js/responsiveNavUtility.js"></script>
     </body>
