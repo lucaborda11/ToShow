@@ -76,6 +76,10 @@ body {
     background-color: white;
 }
 
+.containerFlow .container_btn .readme .img img{
+    height: 115px;
+  }
+
 .containerFlow .container_btn .readme .img p{
     background-color: #ffffff;
     font-weight: 300;
@@ -255,7 +259,11 @@ body {
   
     .containerFlow h1 {
       margin-left: 0;
-      font-size: 2rem;
+      font-size: 1.5rem;
+    }
+
+    .container .case {
+        margin-bottom: 2rem;
     }
 
     .containerFlow .container_btn .readme{
@@ -270,4 +278,15 @@ body {
         max-width: 248px;
     }
   
+    .container .case .caseText .more {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container .case .caseText article  {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 1rem;
+
+    }
 }

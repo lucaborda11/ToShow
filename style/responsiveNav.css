@@ -260,6 +260,7 @@
 
 	.window .header {
 		 position: fixed;
+		 border: none;
 	}
 }
  

@@ -9,6 +9,10 @@ body {
      color: black;
 }
 
+.res {
+    display: none;
+}
+
 .navRes {
     display: none;
 }
@@ -163,6 +167,14 @@ body {
         margin: 0;
     }
 
+    .def {
+        display: none;
+    }
+
+    .res {
+        display: block;
+    }
+
     .infoNext .infoCase {
         justify-content: space-around;
         flex-direction: row;
@@ -175,7 +187,7 @@ body {
     
     .bodyCase .textCase p {
         font-size: 1.2rem;
-        text-align: center;
+        text-align: left;
     }
 
     .logo,

@@ -53,9 +53,10 @@
           document.getElementById('nav').innerHTML += navTemplate(data[language])
   
           document.getElementById('language').value = language
-      </script>
+    </script>
 
-    <div id="title"></div>
+    <div class="def" id="title"></div>
+    <div class="resp" id="title1"></div>
 
     <script type="text/javascript">
         var navTemplate = Handlebars.templates["responsiveNav"];
@@ -92,6 +93,16 @@
         }
 
         document.getElementById('title').innerHTML += navTemplate(data)
+    </script>
+
+    <script type="text/javascript">
+        var navTemplate = Handlebars.templates['titleCase'];
+        var data = {
+            optionalLine:'Century',
+            needLine: '21'
+        }
+
+        document.getElementById('title1').innerHTML += navTemplate(data)
     </script>
 
     <div id="proyectIvascular"></div>

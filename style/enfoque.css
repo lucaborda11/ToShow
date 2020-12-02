@@ -67,13 +67,9 @@ body {
   .header {
     flex-direction: column;
   }
-
-  .paso .number {
-    margin: 0 auto;
-  } 
   
   .paso .text {
     padding-left: 0;
-    text-align: center;
+    text-align: left;
   }
 }
