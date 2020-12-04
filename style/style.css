@@ -309,16 +309,20 @@ body {
   
   .home_1 .container {
     margin-bottom: 5rem;
+    margin-left: 0;
   }
 
   .home_1 .container .title .responsive {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
     text-align: left;
   }
 
   .home_1 .container .title .responsive span {
     font-size: 3.2rem;
     padding-left: 0;
-    margin: 0 auto;
+    width: fit-content;
   }
 
   .home_2 .container h1 {

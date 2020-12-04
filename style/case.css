@@ -49,18 +49,32 @@ body {
     width: 28rem;
 }
 
+.bodyCase .textCase .hidde {
+    font-size: 0.8rem;
+    margin: 0;
+    margin-top: -1rem;
+}
+
 .bodyCase .img {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
 }
 
 .bodyCase .img img{
     max-height: 265px;
     max-width: 397px;
-    margin-bottom: 3rem;
+    margin-bottom: 2px;
     filter: grayscale(1);
     z-index: -1;
+}
+
+.bodyCase .img p{
+    font-size: 0.8rem;
+    margin-bottom: 1px;
+}
+
+.bodyCase .img .last{
+    margin-bottom: 3rem;
 }
 
 .infoNext {
@@ -157,7 +171,10 @@ body {
     .bodyCase {
         flex-direction: column;
     }
-    
+    .bodyCase .img .hidde {
+        display: none;
+    }
+
     .bodyCase .textCase p {
         font-size: 1.4rem;
         text-align: left;
@@ -209,10 +226,12 @@ body {
         text-align: left;
     }
 
-    .logo,
-    .bodyCase .textCase .img1,
-    .bodyCase .img img{
+    .logo {
         max-width: 310px;
+    }
+
+    .bodyCase .img img{
+        max-width: 100%;
     }
 
 }
