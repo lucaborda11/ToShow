@@ -230,8 +230,15 @@ body {
         max-width: 310px;
     }
 
+    .bodyCase .img {
+        margin: 0;
+        margin-right: 0.5rem;
+    }
+
+    .bodyCase .textCase .img1,
     .bodyCase .img img{
-        max-width: 100%;
+        max-width: 360px;
+        margin: 0;
     }
 
 }
