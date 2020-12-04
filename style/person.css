@@ -15,6 +15,7 @@
     height: 38rem;
     padding: 5% 0;
     margin-bottom: 3rem;
+    margin-right: 1rem;
 }
 
 .personContainer .img {
@@ -28,6 +29,7 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    letter-spacing: 1px;
     line-height: 2rem;
 }
 
