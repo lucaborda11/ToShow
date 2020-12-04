@@ -119,10 +119,12 @@ body {
   margin-left: 2rem;
   font-weight: 400;
   text-align: center;
+  line-height: 4rem;
 }
 .home_2 h2 {
   background-color: #f6f6f6;
   color: black;
+  line-height: 2.8rem;
   font-size: 30px;
   margin-bottom: 2rem;
   margin-left: 2rem;
@@ -143,6 +145,7 @@ body {
   color: black;
   font-size: 14;
   font-weight: 400;
+  line-height: 1.4rem;
   margin: 0;
 }
 
@@ -277,11 +280,13 @@ body {
   .home_2 .container h1 {
     margin-left: 0;
     font-size: 3rem;
+    line-height: 2.8rem;
   }
 
   .home_2 .container h2 {
     margin-left: 0;
     font-size: 1.7rem;
+    line-height: 1.7rem;
   }
 
 }
@@ -311,7 +316,7 @@ body {
   }
 
   .home_1 .container .title .responsive span {
-    font-size: 3rem;
+    font-size: 3.2rem;
     padding-left: 0;
     margin: 0 auto;
   }

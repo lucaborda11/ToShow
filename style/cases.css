@@ -29,6 +29,7 @@ body {
     margin-left: 2rem;
     font-weight: 400;
     text-align: center;
+    line-height: 4rem;
 }
 
 .containerFlow h2 {
@@ -83,6 +84,7 @@ body {
 .containerFlow .container_btn .readme .img p{
     background-color: #ffffff;
     font-weight: 300;
+    line-height: 1.4rem;
 }
 
 .containerFlow .readme {
@@ -147,15 +149,17 @@ body {
     flex-direction: column;
     justify-content: space-around;
     padding: 3rem 0;
+    line-height: 1;
 }
 
 .container .case .caseText h3 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.5rem;
 }
 
 .container .case .caseText article {
     font-weight: 300;
+    line-height: 1.4rem;
 }
 
 .container .case .caseText .more {
@@ -166,6 +170,7 @@ body {
 .container .case .caseText .more a{
     color: #4538DA;
     margin-right: 1rem ;
+    text-decoration: none;
 }
 
 .container .case .caseText .more svg{
@@ -260,6 +265,7 @@ body {
     .containerFlow h1 {
       margin-left: 0;
       font-size: 1.5rem;
+      line-height: 2rem;
     }
 
     .container .case {
