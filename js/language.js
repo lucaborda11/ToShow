@@ -1,4 +1,10 @@
 
+function setSelect(len) {
+    document.getElementById('language').value = len
+    setLanguage()
+    reloadPage()
+}
+
 function setLanguage() {
     localStorage.setItem('language', !document.getElementById('language').value ? 'es' : document.getElementById('language').value)
 }
