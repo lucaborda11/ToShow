@@ -29,7 +29,6 @@ body {
     margin-left: 2rem;
     font-weight: 400;
     text-align: center;
-    line-height: 4rem;
 }
 
 .containerFlow h2 {
@@ -85,7 +84,7 @@ body {
 .containerFlow .container_btn .readme .img p{
     background-color: #ffffff;
     font-weight: 300;
-    line-height: 1.4rem;
+    letter-spacing: 1px;
 }
 
 .containerFlow .readme {
@@ -268,7 +267,6 @@ body {
     .containerFlow h1 {
       margin-left: 0;
       font-size: 1.5rem;
-      line-height: 2rem;
     }
 
     .container .case {
