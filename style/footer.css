@@ -116,10 +116,15 @@
     justify-content: space-around;
     width: 60%;
 }
+
 .footer .redes-footer .redes a{
     color: #4538DA;
     font-weight: 400;
+    text-decoration: none;
     border-bottom: 2px solid #4538DA;
+}
+
+.footer .redes-footer .redes a:hover{
     cursor: pointer;
 }
 
