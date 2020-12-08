@@ -49,10 +49,11 @@ body {
     width: 28rem;
 }
 
-.bodyCase .textCase .hidde {
+.bodyCase .textCase .hidden {
     font-size: 0.8rem;
     margin: 0;
     margin-top: -1rem;
+    display: none;
 }
 
 .bodyCase .img {
@@ -171,8 +172,13 @@ body {
     .bodyCase {
         flex-direction: column;
     }
-    .bodyCase .img .hidde {
+    .bodyCase .img .hidden {
         display: none;
+    }
+
+    .bodyCase .textCase .hidden {
+        margin-top: 0;
+        display: block;
     }
 
     .bodyCase .textCase p {

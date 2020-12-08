@@ -224,6 +224,9 @@ body {
     .navRes {
         display: block;
     }
+    .container .case .caseImg .century {
+        width: auto;
+    }
   
 }
 
