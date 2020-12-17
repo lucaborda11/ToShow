@@ -206,13 +206,13 @@
  .window .header ul.menu li.menu-item:nth-child(7) svg {
 	 fill: white;
 	 margin-left: 2rem;
-	 width: 27px;
-	 height: 27px;
+	 width: 20px;
+	 height: 20px;
  }
  
  .window .header ul.menu li.menu-item:nth-child(7) a {
-	 width: 30px;
-	 margin-right: 2rem;
+	 width: 22px;
+	 margin-right: 1.3rem;
 }
 
 .window .header.menu-opened .icon.icon-bag {
