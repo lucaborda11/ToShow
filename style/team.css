@@ -54,6 +54,7 @@ body{
     display: flex;
     flex-direction: row-reverse;
     padding: 5% 10%;
+    flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1150px) {

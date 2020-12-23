@@ -24,6 +24,7 @@
     <script type="text/javascript" src="js/person.js"></script>
     <script type="text/javascript" src="js/responsiveNav.js"></script>
     <script type="text/javascript" src="js/team.js"></script>
+    <script type="text/javascript" src="js/readMore.js"></script>
 
     <header id="nav"></header>
     <div id="navResp" class="navResp"></div>
@@ -205,7 +206,7 @@
     </script>
 
     <section class="teamPersons">
-      <div id="person1"></div><div id="person2"></div><div id="person3"></div><div id="person4"></div><div id="person5"></div><div id="person6"></div><div id="person7"></div>
+      <div id="person5"></div><div id="person7"></div><div id="person3"></div><div id="person1"></div><div id="person2"></div><div id="person6"></div><div id="person4"></div>
 
       <script type="text/javascript">
         var navTemplate = Handlebars.templates['person'];
@@ -245,7 +246,10 @@
           var img = '<img class="img" src="img/person2.png" alt="">'
           var position = 'IM'
           var personName = 'Fabián Cassan'
-          var text = 'Especialista en estrategias de inbound marketing para generar relaciones duraderas con los clientes.<br>'
+          var id = 'fabian'
+          var read_more = '<input class="btn_more" type="button" onclick="showHidde('+ id +', this)" value="<<Leer mas>>" />'
+          var text = 'Especialista en estrategias de inbound marketing para generar relaciones duraderas con los clientes.<br> '
+          var text1 = '<p class="hidde" id="fabian"> Especialista en estrategias de inbound marketing para generar relaciones duraderas con los clientes. Especialista en estrategias de inbound marketing para generar relaciones duraderas con los clientes.<p>'
           var redes = '<a href="https://www.linkedin.com/in/fabi%C3%A1n-cassan-51631911/" target="_blank">LinkedIn</a>'
 
           var text_en = 'Specialist in inbound marketing strategies to generate lasting relationships with clients.'
@@ -271,8 +275,228 @@
 
 
         document.getElementById('person2').innerHTML += navTemplate(data[language])
-      </script>
-    </section>
+    </script>
+
+    <script type="text/javascript">
+      var navTemplate = Handlebars.templates['person'];
+      var img = '<img class="img" src="img/person3.jpg" alt="">'
+      var position = 'CD'
+      var personName = 'Henrique Luckmann'
+      var id = 'henrique'
+      var read_more = '<input class="btn_more" type="button" onclick="showHidde('+ id +', this)" value="<<Leer mas>>" />'
+      var text = 'Consultor Independiente para el Desarrollo de Nuevos Negocios de Dispositivos Médicos, en Latinoamérica.<br> '
+      var text1 = '<p class="hidde" id="henrique">  Con más de 20 años de experiencia en la industria de dispositivos médicos, 15 de ellos trabajando con empresas multinacionales. Licenciado en Farmacia, con posgrado en Negocios Internacionales.<p>'
+      var redes = '<a href="https://www.linkedin.com/in/fabi%C3%A1n-cassan-51631911/" target="_blank">LinkedIn</a>'
+
+      var text_en = 'Independent Consultant for the Development of New Business of Medical Devices, in Latin America.<br>'
+      var text_en_more = '<p class="hidde" id="henrique"> With more than 20 years of experience in the medical device industry, 15 of them working with multinational companies. Graduated in Pharmacy, with a postgraduate degree in International Business.<p>'
+      var read_more_en = '<input class="btn_more" type="button" onclick="showHidde('+ id +', this)" value="<<Reed more>>" />'
+
+
+      var data = {
+        es: {
+          img: img,
+          position: position,
+          personName: personName,
+          description: text,
+          description_more: text1,
+          read_more: read_more,
+          redes: redes
+        },
+        en: {
+          img: img,
+          position: position,
+          personName: personName,
+          description: text_en,
+          description_more: text_en_more,
+          read_more: read_more_en,
+          redes: redes
+        }
+      }
+
+    var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+
+    document.getElementById('person3').innerHTML += navTemplate(data[language])
+  </script>
+
+
+  <script type="text/javascript">
+      var navTemplate = Handlebars.templates['person'];
+      var img = '<img class="img" src="img/person4.jpg" alt="">'
+      var position = 'DG'
+      var personName = 'Javier Pinzón'
+      var id = 'javier'
+      var read_more = '<input class="btn_more" type="button" onclick="showHidde('+ id +', this)" value="<<Leer mas>>" />'
+      var text = 'Director General y consultor de estrategia en doHealth, con 20 años de experiencia en la industria <br> '
+      var text1 = '<p class="hidde" id="javier">de dispositivos médicos y desarrollo de proyectos de base tecnológica. Amplio conocimiento en los servicios integrales de salud de México. Trabajó a nivel mundial e internacional con empresas de innovación, empresas de servicios y manufactura.<p>'
+      var redes = '<a href="https://www.linkedin.com/in/fabi%C3%A1n-cassan-51631911/" target="_blank">LinkedIn</a>'
+
+      var text_en = 'General Director and strategy consultant at doHealth, with 20 years of experience in the medical<br>'
+      var text_en_more = '<p class="hidde" id="javier"> device industry and development of technology-based projects. Extensive knowledge of comprehensive health services in Mexico. He worked globally and internationally with innovation companies, service companies and manufacturing.<p>'
+      var read_more_en = '<input class="btn_more" type="button" onclick="showHidde('+ id +', this)" value="<<Reed more>>" />'
+
+
+      var data = {
+        es: {
+          img: img,
+          position: position,
+          personName: personName,
+          description: text,
+          description_more: text1,
+          read_more: read_more,
+          redes: redes
+        },
+        en: {
+          img: img,
+          position: position,
+          personName: personName,
+          description: text_en,
+          description_more: text_en_more,
+          read_more: read_more_en,
+          redes: redes
+        }
+      }
+
+    var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+
+    document.getElementById('person4').innerHTML += navTemplate(data[language])
+  </script>
+
+
+<script type="text/javascript">
+    var navTemplate = Handlebars.templates['person'];
+    var img = '<img class="img" src="img/person5.jpeg" alt="">'
+    var position = 'TL'
+    var personName = 'Ricardo Alvira Q.'
+    var id = 'ricardo'
+    var read_more = '<input class="btn_more" type="button" onclick="showHidde('+ id +', this)" value="<<Leer mas>>" />'
+    var text = 'Más de 20 años de experiencia en el mundo de los dispositivos médicos, con foco en resultados, liderazgo<br> '
+    var text1 = '<p class="hidde" id="ricardo">y la formación de equipos comerciales de alto desempeño Trabajó en el desarrollo de Andean para empresas internacionales de primera línea como Boston, Terumo, etc con excelente performance.<p>'
+    var redes = '<a href="https://www.linkedin.com/in/fabi%C3%A1n-cassan-51631911/" target="_blank">LinkedIn</a>'
+
+    var text_en = 'More than 20 years of experience in the world of medical devices, focused on results, leadership and the formation <br>'
+    var text_en_more = '<p class="hidde" id="ricardo">of high-performance commercial teams.Worked in the development of Andean for leading international companies such as Boston, Terumo, etc. with excellent performance .<p>'
+    var read_more_en = '<input class="btn_more" type="button" onclick="showHidde('+ id +', this)" value="<<Reed more>>" />'
+
+
+    var data = {
+      es: {
+        img: img,
+        position: position,
+        personName: personName,
+        description: text,
+        description_more: text1,
+        read_more: read_more,
+        redes: redes
+      },
+      en: {
+        img: img,
+        position: position,
+        personName: personName,
+        description: text_en,
+        description_more: text_en_more,
+        read_more: read_more_en,
+        redes: redes
+      }
+    }
+
+  var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+
+  document.getElementById('person5').innerHTML += navTemplate(data[language])
+</script>
+
+
+<script type="text/javascript">
+  var navTemplate = Handlebars.templates['person'];
+  var img = '<img class="img" src="img/person6.jpg" alt="">'
+  var position = 'CI'
+  var personName = 'Alberto Libedinsky'
+  var id = 'alberto'
+  var read_more = '<input class="btn_more" type="button" onclick="showHidde('+ id +', this)" value="<<Leer mas>>" />'
+  var text = 'Consultor Independiente para el Desarrollo de Nuevos Negocios de negocios financieros <br> '
+  var text1 = '<p class="hidde" id="alberto">y de seguros en Chile. Con más de 30 años de experiencia en puestos de alto nivel en empresas de Seguros, AFP (fondos de jubilaciones), evaluaciones de proyectos y capital de riesgo. Graduado en Matemáticas de la Universidad de Chile con un MBA de Sloan School of Management del Instituto de Tecnología de Massachusetts (MIT).<p>'
+  var redes = '<a href="https://www.linkedin.com/in/fabi%C3%A1n-cassan-51631911/" target="_blank">LinkedIn</a>'
+
+  var text_en = 'Independent Consultant for the Development of New Financial and Insurance Business <br>'
+  var text_en_more = '<p class="hidde" id="alberto">Businesses in Chile. With more than 30 years of experience in high-level positions in insurance companies, AFPs (retirement funds), project evaluations and venture capital. Graduated in Mathematics from the University of Chile with an MBA from the Sloan School of Management of the Massachusetts Institute of Technology (MIT).<p>'
+  var read_more_en = '<input class="btn_more" type="button" onclick="showHidde('+ id +', this)" value="<<Reed more>>" />'
+
+
+  var data = {
+    es: {
+      img: img,
+      position: position,
+      personName: personName,
+      description: text,
+      description_more: text1,
+      read_more: read_more,
+      redes: redes
+    },
+    en: {
+      img: img,
+      position: position,
+      personName: personName,
+      description: text_en,
+      description_more: text_en_more,
+      read_more: read_more_en,
+      redes: redes
+    }
+  }
+
+var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+
+document.getElementById('person6').innerHTML += navTemplate(data[language])
+</script>
+
+
+<script type="text/javascript">
+  var navTemplate = Handlebars.templates['person'];
+  var img = '<img class="img" src="img/person7.jpg" alt="">'
+  var position = 'LY'
+  var personName = 'Armando Angulo Humeres'
+  var id = 'armando'
+  var read_more = '<input class="btn_more" type="button" onclick="showHidde('+ id +', this)" value="<<Leer mas>>" />'
+  var text = 'Abogado, Universidad Central de Chile. Con un Magíster en Tributación, Escuela de Negocios,<br> '
+  var text1 = '<p class="hidde" id="armando">Universidad de Chile; Postgrado en Fiscalidad Europea e Internacional, Universidad de Castilla-La Mancha, España. Más de 10 años de experiencia en derecho corporativo y tributario.<p>'
+  var redes = '<a href="https://www.linkedin.com/in/fabi%C3%A1n-cassan-51631911/" target="_blank">LinkedIn</a>'
+
+  var text_en = 'Lawyer, Universidad Central de Chile. Master in Taxation, Business School, Universidad de Chile.<br>'
+  var text_en_more = '<p class="hidde" id="armando"> With a Postgraduate in European and International Taxation, Universidad de Castilla-La Mancha, Spain. 10+ years of experience in corporate and tax law.<p>'
+  var read_more_en = '<input class="btn_more" type="button" onclick="showHidde('+ id +', this)" value="<<Reed more>>" />'
+
+
+  var data = {
+    es: {
+      img: img,
+      position: position,
+      personName: personName,
+      description: text,
+      description_more: text1,
+      read_more: read_more,
+      redes: redes
+    },
+    en: {
+      img: img,
+      position: position,
+      personName: personName,
+      description: text_en,
+      description_more: text_en_more,
+      read_more: read_more_en,
+      redes: redes
+    }
+  }
+
+var language = !localStorage.getItem('language') ? 'es' : localStorage.getItem('language')
+
+
+document.getElementById('person7').innerHTML += navTemplate(data[language])
+</script>
+
+</section>
 
 
     <footer id="form"></footer>
